@@ -1,0 +1,36 @@
+To fix suspension clicks open car's _main*.cfg. Found and replace lines by this:
+
+
+slot		0.024 0.150 0.000	0.000 0.000 -0.200	301	; FL shock absorber
+attach		0x00041000 1
+slottype	201
+
+-
+
+slot		0.050 -0.250 0.000	0.000 0.000 0.000	311	; FL spring
+attach		0x00040051 1
+slottype	201
+
+-------
+
+slot		-0.024 0.150 0.000	0.000 0.000 0.200	302	; FR shock absorber
+attach		0x00041000 1
+slottype	202
+
+-
+
+slot		-0.050 -0.250 0.000	0.000 0.000 0.000	312	; FR spring
+attach		0x00040051 1
+slottype	202
+
+------
+
+slot		0.176 0.000 -0.100	0.000 0.150 -0.100	303	; RL shock absorber
+attach		0x00041000 1
+slottype	303
+
+-
+
+slot		0.200 -0.350 -0.050	0.000 0.000 0.000	313	; RL spring
+attach		0x00040051 1
+slottype	303
