@@ -22,7 +22,6 @@ public class EngineModels extends Part
 		if ( number < 0.2 )
 		{
 			stock_parts_list_E  = new int[34];
-			stock_parts_list_E[ 0] = parts:0x000053FFr; // "stock battery" //
 			stock_parts_list_E[ 1] = parts.engines.GM_V8_pak:0x0000003Fr; // "GM 283-307 small block" //
 			
 			number2 = random();

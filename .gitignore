@@ -1,4 +1,9 @@
 **/*.class
+**/*.CLASS
+**/*.tex
+**/*.TEX
+**/*.scx
+**/*.SCX
 **/*.exe
 **/*.log
 save/

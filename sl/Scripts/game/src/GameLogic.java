@@ -18,7 +18,7 @@ public class GameLogic extends GameType implements Runnable
 	final static ResourceRef MAPS_ROOT = new ResourceRef( MW_Mod:0x0ABCr );
 
 	//new career player settings
-	final static int INITIAL_PLAYER_MONEY = 10000;
+	final static int INITIAL_PLAYER_MONEY = 100000;
 	final static float INITIAL_PLAYER_PRESTIGE = 0.3;			//player starts at 60th place (ie. lamest club/20th)  [range 0.0-1.0]
 
 	//new carreer opponent settings (for all 3 clubs) [range 0.0-1.0]

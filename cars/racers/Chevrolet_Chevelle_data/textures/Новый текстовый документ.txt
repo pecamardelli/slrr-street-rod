@@ -1,0 +1,23 @@
+black.png		texture 0x00000043
+
+chrome.jpg		texture 0x00000096
+
+evmap.dds		texture 0x00000000
+
+interior_lod0.png	texture 0x00000046
+
+lights_lod0.png		texture 0x0000005C
+
+nodamage_lod0.png	texture 0x00000072
+
+paintable.png		texture 0õ00020020
+
+Palka =D.png		texture 0x00000075
+
+lights_city.png		texture 0x0000007B
+
+wheel.png		texture 0x00000078
+
+wheel_lod0.png		texture 0x00000065
+
+tread.png		texture 0x0000004E
