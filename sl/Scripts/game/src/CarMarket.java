@@ -54,7 +54,7 @@ public class CarMarket extends Scene implements GameState
 
 	public static VehicleDescriptor[] getInitialCars( int used )
 	{
-		VehicleDescriptor[] result = new VehicleDescriptor[20];
+		VehicleDescriptor[] result = new VehicleDescriptor[22];
 
 		int	i;
 		int	vt;
@@ -680,14 +680,14 @@ public class DealerSHData extends DealerData
 {
 	public DealerSHData()
 	{
-		int carNumber = 20;
-		int carDistance = 3.2;
+		int carNumber = 22;
+		int carDistance = 3.1;
 
 		carPos = new Vector3[carNumber + 1];
 		carOri = new Ypr[carNumber + 1];
 
-		carPos[0] = new Vector3( 0.380, 0.000, 3.916 );		//itt all a player kocsija, ha azzal jon
-		carOri[0] = new Ypr( 2.618, 0.000, 0.000 );
+		carPos[0] = new Vector3( 4.380, 0.000, 4.916 );		//itt all a player kocsija, ha azzal jon
+		carOri[0] = new Ypr( 1.500, 0.000, 0.000 );
 		//carPos[0] = new Vector3( 4.644, 0.000, 3.916 );	//nem egy csomoban vannak, epuletbe belemegy a kamera miattuk
 		//carOri[0] = new Ypr( 2.618, 0.000, 0.000 );
 		//carPos[0] = new Vector3( 9.140, 0.000, 3.916 );
@@ -713,7 +713,7 @@ public class DealerSHData extends DealerData
 
 		for(int i=1;i<=carNumber;i++){
 			if (i <= carNumber/2) {
-				carPos[i] = new Vector3( -11.733, 0.000, 8.666 - carDistance*i );
+				carPos[i] = new Vector3( -11.733, 0.000, 10.666 - carDistance*i );
 				carOri[i] = new Ypr( -1.552, 0.000, 0.000 );
 			}
 			else {
