@@ -54,7 +54,7 @@ public class CarMarket extends Scene implements GameState
 
 	public static VehicleDescriptor[] getInitialCars( int used )
 	{
-		VehicleDescriptor[] result = new VehicleDescriptor[4];
+		VehicleDescriptor[] result = new VehicleDescriptor[8];
 
 		int	i;
 		int	vt;
