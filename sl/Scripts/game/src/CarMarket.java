@@ -54,7 +54,7 @@ public class CarMarket extends Scene implements GameState
 
 	public static VehicleDescriptor[] getInitialCars( int used )
 	{
-		VehicleDescriptor[] result = new VehicleDescriptor[8];
+		VehicleDescriptor[] result = new VehicleDescriptor[20];
 
 		int	i;
 		int	vt;
@@ -356,7 +356,7 @@ public class CarMarket extends Scene implements GameState
 
 				car.setParent( map );
 				Vector3 pos = getCarPos(slot);
-				pos.z += Math.random()*0.1;
+				// pos.z += Math.random()*0.1;
 				pos.x += Math.random()*0.1;
 				car.setMatrix( pos, getCarOri(slot) );
 				car.command( "reset" );
@@ -680,8 +680,11 @@ public class DealerSHData extends DealerData
 {
 	public DealerSHData()
 	{
-		carPos = new Vector3[9];
-		carOri = new Ypr[9];
+		int carNumber = 20;
+		int carDistance = 3.2;
+
+		carPos = new Vector3[carNumber + 1];
+		carOri = new Ypr[carNumber + 1];
 
 		carPos[0] = new Vector3( 0.380, 0.000, 3.916 );		//itt all a player kocsija, ha azzal jon
 		carOri[0] = new Ypr( 2.618, 0.000, 0.000 );
@@ -690,22 +693,33 @@ public class DealerSHData extends DealerData
 		//carPos[0] = new Vector3( 9.140, 0.000, 3.916 );
 		//carOri[0] = new Ypr( 2.618, 0.000, 0.000 );
 
-		carPos[1] = new Vector3( -11.733, 0.000, -2.666 );
-		carOri[1] = new Ypr( -1.552, 0.000, 0.000 );
-		carPos[2] = new Vector3( -11.733, 0.000, -8.452 );
-		carOri[2] = new Ypr( -1.552, 0.000, 0.000 );
-		carPos[3] = new Vector3( -11.733, 0.000, -14.563 );
-		carOri[3] = new Ypr( -1.552, 0.000, 0.000 );
-		carPos[4] = new Vector3( -11.733, 0.000, -20.468 );
-		carOri[4] = new Ypr( -1.552, 0.000, 0.000 );
+		// carPos[1] = new Vector3( -11.733, 0.000, 5.666 );
+		// carOri[1] = new Ypr( -1.552, 0.000, 0.000 );
+		// carPos[2] = new Vector3( -11.733, 0.000, 3.452 );
+		// carOri[2] = new Ypr( -1.552, 0.000, 0.000 );
+		// carPos[3] = new Vector3( -11.733, 0.000, 1.563 );
+		// carOri[3] = new Ypr( -1.552, 0.000, 0.000 );
+		// carPos[4] = new Vector3( -11.733, 0.000, -20.468 );
+		// carOri[4] = new Ypr( -1.552, 0.000, 0.000 );
 
-		carPos[5] = new Vector3( -4.475, 0.000, -20.492 );
-		carOri[5] = new Ypr( 1.592, 0.000, 0.000 );
-		carPos[6] = new Vector3( -4.475, 0.000, -14.101 );
-		carOri[6] = new Ypr( 1.592, 0.000, 0.000 );
-		carPos[7] = new Vector3( -4.475, 0.000, -8.507 );
-		carOri[7] = new Ypr( 1.592, 0.000, 0.000 );
-		carPos[8] = new Vector3( -4.475, 0.000, -2.775 );
-		carOri[8] = new Ypr( 1.592, 0.000, 0.000 );
+		// carPos[5] = new Vector3( -4.475, 0.000, -20.492 );
+		// carOri[5] = new Ypr( 1.592, 0.000, 0.000 );
+		// carPos[6] = new Vector3( -4.475, 0.000, -14.101 );
+		// carOri[6] = new Ypr( 1.592, 0.000, 0.000 );
+		// carPos[7] = new Vector3( -4.475, 0.000, -8.507 );
+		// carOri[7] = new Ypr( 1.592, 0.000, 0.000 );
+		// carPos[8] = new Vector3( -4.475, 0.000, -2.775 );
+		// carOri[8] = new Ypr( 1.592, 0.000, 0.000 );
+
+		for(int i=1;i<=carNumber;i++){
+			if (i <= carNumber/2) {
+				carPos[i] = new Vector3( -11.733, 0.000, 8.666 - carDistance*i );
+				carOri[i] = new Ypr( -1.552, 0.000, 0.000 );
+			}
+			else {
+				carPos[i] = new Vector3( -4.475, 0.000, -24.492 + carDistance*(i-carNumber/2) );
+				carOri[i] = new Ypr( 1.592, 0.000, 0.000 );
+			}
+		}
 	}
 }
