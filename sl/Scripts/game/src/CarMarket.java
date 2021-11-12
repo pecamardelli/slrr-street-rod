@@ -681,7 +681,7 @@ public class DealerSHData extends DealerData
 	public DealerSHData()
 	{
 		int carNumber = 22;
-		int carDistance = 3.1;
+		float carDistance = 2.9;
 
 		carPos = new Vector3[carNumber + 1];
 		carOri = new Ypr[carNumber + 1];
