@@ -130,9 +130,9 @@ public class Config extends GameType
 	static int			player_display = 0x0; //0x0201; // FPS, position text
 	static int			MouseHelp = 0; // Info about object hovering by coursor
 
-	static	float		wheel_gndfeedback_factor= 7.0;
-	static	float		wheel_brake_factor	= 6.0;
-	static	float		engine_inertia_factor	= 6.0;
+	static	float		wheel_gndfeedback_factor= 4.0;
+	static	float		wheel_brake_factor	= 3.0;
+	static	float		engine_inertia_factor	= 3.5;
 
 	static float		target_angle_weight = 0.5f;
 
