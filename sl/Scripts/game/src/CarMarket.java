@@ -687,16 +687,8 @@ public class DealerSHData extends DealerData
 {
 	public DealerSHData()
 	{
-<<<<<<< HEAD
-		int carNumber = 22;
-		float carDistance = 2.9;
-
-		carPos = new Vector3[carNumber + 1];
-		carOri = new Ypr[carNumber + 1];
-=======
 		carPos = new Vector3[TOTAL_CARS + 1];
 		carOri = new Ypr[TOTAL_CARS + 1];
->>>>>>> feature/dealerMod
 
 		carPos[0] = new Vector3( 8.380, 0.000, 1.916 );		//itt all a player kocsija, ha azzal jon
 		carOri[0] = new Ypr( 1.500, 0.000, 0.000 );
