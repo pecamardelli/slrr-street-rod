@@ -54,7 +54,7 @@ public class CarMarket extends Scene implements GameState
 
 	public static VehicleDescriptor[] getInitialCars( int used )
 	{
-		VehicleDescriptor[] result = new VehicleDescriptor[22];
+		VehicleDescriptor[] result = new VehicleDescriptor[DealerData.TOTAL_CARS];
 
 		int	i;
 		int	vt;
@@ -650,6 +650,13 @@ public class DealerData
 {
 	Vector3[]	carPos;
 	Ypr[]		carOri;
+
+	public static int	SECTION_1_CAR_NUMBER	= 7;
+	public static int	SECTION_2_CAR_NUMBER	= 10;
+	public static int	SECTION_3_CAR_NUMBER	= 7;
+	public static int	TOTAL_CARS				= SECTION_1_CAR_NUMBER + SECTION_2_CAR_NUMBER + SECTION_3_CAR_NUMBER;
+	
+	public float	DISTANCE_BETWEEN_CARS	= 3.1;
 }
 
 public class DealerNewData extends DealerData
@@ -680,46 +687,39 @@ public class DealerSHData extends DealerData
 {
 	public DealerSHData()
 	{
+<<<<<<< HEAD
 		int carNumber = 22;
 		float carDistance = 2.9;
 
 		carPos = new Vector3[carNumber + 1];
 		carOri = new Ypr[carNumber + 1];
+=======
+		carPos = new Vector3[TOTAL_CARS + 1];
+		carOri = new Ypr[TOTAL_CARS + 1];
+>>>>>>> feature/dealerMod
 
-		carPos[0] = new Vector3( 4.380, 0.000, 4.916 );		//itt all a player kocsija, ha azzal jon
+		carPos[0] = new Vector3( 8.380, 0.000, 1.916 );		//itt all a player kocsija, ha azzal jon
 		carOri[0] = new Ypr( 1.500, 0.000, 0.000 );
-		//carPos[0] = new Vector3( 4.644, 0.000, 3.916 );	//nem egy csomoban vannak, epuletbe belemegy a kamera miattuk
-		//carOri[0] = new Ypr( 2.618, 0.000, 0.000 );
-		//carPos[0] = new Vector3( 9.140, 0.000, 3.916 );
-		//carOri[0] = new Ypr( 2.618, 0.000, 0.000 );
 
-		// carPos[1] = new Vector3( -11.733, 0.000, 5.666 );
-		// carOri[1] = new Ypr( -1.552, 0.000, 0.000 );
-		// carPos[2] = new Vector3( -11.733, 0.000, 3.452 );
-		// carOri[2] = new Ypr( -1.552, 0.000, 0.000 );
-		// carPos[3] = new Vector3( -11.733, 0.000, 1.563 );
-		// carOri[3] = new Ypr( -1.552, 0.000, 0.000 );
-		// carPos[4] = new Vector3( -11.733, 0.000, -20.468 );
-		// carOri[4] = new Ypr( -1.552, 0.000, 0.000 );
+		// First section
+		int position = 1;
+		for(int i=0;i<SECTION_1_CAR_NUMBER;i++){
+			carPos[position + i] = new Vector3( 13.000 - DISTANCE_BETWEEN_CARS*i , 0.000, 7.000 );
+			carOri[position + i] = new Ypr( 0.000, 0.000, 0.000 );
+		}
 
-		// carPos[5] = new Vector3( -4.475, 0.000, -20.492 );
-		// carOri[5] = new Ypr( 1.592, 0.000, 0.000 );
-		// carPos[6] = new Vector3( -4.475, 0.000, -14.101 );
-		// carOri[6] = new Ypr( 1.592, 0.000, 0.000 );
-		// carPos[7] = new Vector3( -4.475, 0.000, -8.507 );
-		// carOri[7] = new Ypr( 1.592, 0.000, 0.000 );
-		// carPos[8] = new Vector3( -4.475, 0.000, -2.775 );
-		// carOri[8] = new Ypr( 1.592, 0.000, 0.000 );
-
-		for(int i=1;i<=carNumber;i++){
-			if (i <= carNumber/2) {
-				carPos[i] = new Vector3( -11.733, 0.000, 10.666 - carDistance*i );
-				carOri[i] = new Ypr( -1.552, 0.000, 0.000 );
-			}
-			else {
-				carPos[i] = new Vector3( -4.475, 0.000, -24.492 + carDistance*(i-carNumber/2) );
-				carOri[i] = new Ypr( 1.592, 0.000, 0.000 );
-			}
+		// Second section
+		position += SECTION_1_CAR_NUMBER;
+		for(int i=0;i<SECTION_2_CAR_NUMBER;i++){
+			carPos[position + i] = new Vector3( -11.733, 0.000, 7.566 - DISTANCE_BETWEEN_CARS*i );
+			carOri[position + i] = new Ypr( -1.552, 0.000, 0.000 );
+		}
+		
+		// Third section
+		position += SECTION_2_CAR_NUMBER;
+		for(int i=0;i<SECTION_3_CAR_NUMBER;i++){
+			carPos[position + i] = new Vector3( -4.475, 0.000, -21.392 + DISTANCE_BETWEEN_CARS*i );
+			carOri[position + i] = new Ypr( 1.592, 0.000, 0.000 );
 		}
 	}
 }
