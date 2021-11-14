@@ -20,7 +20,7 @@ public class Chevrolet_Monte_Carlo_FF_70 extends Chevrolet_Monte_Carlo_70_models
 
 		description = "Replica of Monte Carlo of the movie Fast And Furious Drift Out.";
 
-		value = mHUF2USD(2.0);
+		value = mHUF2USD(3.0);
 		brand_new_prestige_value = 90.0;
 
 		fully_stripped_drag = 0.61;
@@ -34,10 +34,8 @@ public class Chevrolet_Monte_Carlo_FF_70 extends Chevrolet_Monte_Carlo_70_models
 	{
 		// stock 1 stuffs //
 
-		float number = random();
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getGmEngine();
+		float number = random();		
+		stock_parts_list_E = EngineModels.getGmEngine();
 
 		stock_parts_list_FL = new int[4];
 		stock_parts_list_FL[ 0] = cars.racers.baiern:0x00000165r; // "L headlights 2" //

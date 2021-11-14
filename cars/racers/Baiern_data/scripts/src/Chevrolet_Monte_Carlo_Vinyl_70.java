@@ -20,7 +20,7 @@ public class Chevrolet_Monte_Carlo_Vinyl_70 extends Chevrolet_Monte_Carlo_70_mod
 
 		description = "The Monte Carlo started as a Chevrolet counterpart to the Pontiac Grand Prix, as conceived by Elliot M. (Pete) Estes, general manager of Chevrolet, and Chevrolet's chief stylist, David Holls. They modeled the styling on the contemporary Cadillac Eldorado, although much of the body and structure were shared with the Chevrolet Chevelle (firewall, windshield, decklid, and rear window were the same). New exterior 'coke bottle styling' featured concealed windshield wipers. A light monitoring system was optional. Optional engines included the four-barrel carbureted Turbo-Fire 350 CID small block V8, rated at 300 hp (224 kW) at 4800 rpm and 380 lb·ft (515 Nm) at 3200 rpm, the Turbo-Fire 400 (400 CID/6.5 L) with a two-barrel carburetor, rated at 265 hp (198 kW) at 4800 rpm and 400 lb·ft (542 Nm) at 3800 rpm, and the Turbo-Jet 400 (402 CID/6.6 L) with a four-barrel carburetor, rated at 330 hp (246 kW) at 4800 rpm and 410 lb·ft (515 Nm) at 3200 rpm). Note that the two Chevrolet 400 CID V8s offered this year were actually two different designs. The two-barrel carbureted Turbo-Fire 400 was a Small Block Chevrolet V8 engine, similar, but different internally, to the 350, while the Turbo-Jet 400 was a slightly enlarged version of the 396 CID big block V8 and had an actual displacement of 402 CID.";
 
-		value = mHUF2USD(1.4);
+		value = mHUF2USD(1.9);
 		brand_new_prestige_value = 32.50;
 
 		fully_stripped_drag = 0.53;
@@ -33,10 +33,8 @@ public class Chevrolet_Monte_Carlo_Vinyl_70 extends Chevrolet_Monte_Carlo_70_mod
 	{
 		// stock 1 stuffs //
 
-		float number = random();
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getGmEngine();
+		float number = random();		
+		stock_parts_list_E = EngineModels.getGmEngine();
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.baiern:0x00000111r; // "L headlights" //

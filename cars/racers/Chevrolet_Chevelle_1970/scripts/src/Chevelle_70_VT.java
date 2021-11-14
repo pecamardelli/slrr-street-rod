@@ -7,9 +7,7 @@ public class Chevelle_70_VT extends VehicleType
 	public Chevelle_70_VT( int id )
 	{
 		VehicleModel vmd;
-
-		// int color_number = GameLogic.CARCOLORS.length;
-		// GameLogic.addColor(cars.racers.Chevrolet_Chevelle_1970:0x0000F02Ar);
+		float totalProduction = 2896.220; // Total production of Malibu, 2-door sport coupe V8 divided by 100. Source: http://chevellestuff.net/1970/style_prod_no.htm
 
 	// DEMO mode //
 		// Chevrolet Chevelle ´70 //
@@ -31,7 +29,7 @@ public class Chevelle_70_VT extends VehicleType
 		// Chevrolet Chevelle ´70 //
 			vmd=new VehicleModel( cars.racers.Chevrolet_Chevelle_1970:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 289622.0; // Total production of Malibu, 2-door sport coupe V8. Source: http://chevellestuff.net/1970/style_prod_no.htm
+			vmd.prevalence = totalProduction; // Total production of Malibu, 2-door sport coupe V8. Source: http://chevellestuff.net/1970/style_prod_no.htm
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.25;	vmd.maxTear	= 1.0;
@@ -54,7 +52,7 @@ public class Chevelle_70_VT extends VehicleType
 		// Chevrolet Chevelle ´70 //
 			vmd=new VehicleModel( cars.racers.Chevrolet_Chevelle_1970:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 289622.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -66,7 +64,7 @@ public class Chevelle_70_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.MC:0x00000006r, VS_NRACE | VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 289622.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.5;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.5;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
