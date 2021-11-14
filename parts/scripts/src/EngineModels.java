@@ -827,7 +827,7 @@ public class EngineModels extends Part
 		return stock_parts_list_E;
 	}
 	
-	public int[] getFordEngine(){
+	public static int[] getFordEngine(){
 		number = random();
 		int[] stock_parts_list_E  = new int[2];
 		stock_parts_list_E[ 0] = parts:0x000053FFr; // "stock battery" //

@@ -20,7 +20,7 @@ public class Mercury_Park_Lane_White_64 extends Mercury_Park_Lane_64_models
 
 		description = "The Park Lane was introduced in 1958 and was applied to Mercury's premium automobile line. The Park Lane name had first been used for a 1956 Ford two door station wagon model that was supposed to compete with the Chevrolet Nomad. 1958 Park Lane's wheelbase was 125 inches, 3 inches longer than other Mercury models, length was 220.2 inches and other models 213.2 inches. For the 1959 model year the Park Lane's wheelbase was increased to 128 inches (3,300 mm), two inches longer than the rest of the Mercury line. In 1960, its wheelbase was reduced to 126 inches (3,200 mm), matching the rest of the Mercury line, overall length was 219.2 inches for all full size Mercurys. 1960 Park Lanes were available as a two-door hardtop, four door hardtop or convertible. The chassis was shared with the Colony Park station wagon. The name was reinstated in 1964 as Mercury again attempted to retrench its models in the price gap between Ford and Lincoln. Most Park Lanes had a 'Breezeway' window, a powered reverse slanted rear window that could be lowered into the body, first used on the Mercury Turnpike Cruiser and the 1958-60 Lincoln Continental. Park Lanes were available with the Marauder package (as were all full-size '64 Mercurys) which featured the 'fastback' roof design in place of the Breezeway, and which were also used on the popular full-size Ford line.";
 
-		value = mHUF2USD(1.046);
+		value = mHUF2USD(1.246);
 		brand_new_prestige_value = 34.0;
 
 		fully_stripped_drag = 0.48;
@@ -30,11 +30,8 @@ public class Mercury_Park_Lane_White_64 extends Mercury_Park_Lane_64_models
 	}
 
 	public void addStockParts( Descriptor desc )
-	{
-		float number = random();
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getFordEngine();
+	{		
+		stock_parts_list_E = EngineModels.getFordEngine();
 
 		stock_parts_list_T  = new int[1];
 		stock_parts_list_T[ 0] = cars.racers.Duhen:0x000000C3r; // "targa top" //

@@ -7,6 +7,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 	public Mercury_Park_Lane_64_VT( int id )
 	{
 		VehicleModel vmd;
+		float totalProduction = 187.64;
 
 	// DEMO mode //
 		// Mercury Park Lane '64 //
@@ -78,7 +79,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700000000.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
@@ -106,7 +107,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane Vinyl Top '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000126r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1620.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
@@ -134,7 +135,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane White Top '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000127r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
@@ -203,7 +204,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1950.0;
+			vmd.prevalence = totalProduction*0.6;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -215,7 +216,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000006r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1600.0;
+			vmd.prevalence = totalProduction*0.5;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -227,7 +228,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000006r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1200.0;
+			vmd.prevalence = totalProduction*0.2;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -240,7 +241,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane Vinyl Top '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000126r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1900.0;
+			vmd.prevalence = totalProduction*0.6;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.75;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -252,7 +253,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000126r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1600.0;
+			vmd.prevalence = totalProduction*0.5;
 			vmd.minPower	= 1.7;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.stockPrestige=292;	vmd.fullPrestige= 313;
@@ -261,7 +262,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000126r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1200.0;
+			vmd.prevalence = totalProduction*0.18;
 			vmd.minPower	= 1.7;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.stockPrestige=292;	vmd.fullPrestige= 313;
@@ -271,7 +272,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane White Top '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000127r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1900.0;
+			vmd.prevalence = totalProduction*0.6;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -283,7 +284,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000127r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1500.0;
+			vmd.prevalence = totalProduction*0.5;
 			vmd.minPower	= 1.7;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.stockPrestige=297;	vmd.fullPrestige= 317;
@@ -292,7 +293,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000127r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1100.0;
+			vmd.prevalence = totalProduction*0.22;
 			vmd.minPower	= 1.7;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.stockPrestige=297;	vmd.fullPrestige= 317;
