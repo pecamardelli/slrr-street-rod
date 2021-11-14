@@ -78,7 +78,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 		// Mercury Park Lane '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = 1700000000.0;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
@@ -87,10 +87,21 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			vmd.stockQM = qm_stock_Duhen_SunStrip_1_5_DVC;	vmd.fullQM = qm_full_Duhen_SunStrip_1_5_DVC;
 			vmd.vehicleName = "Mercury Park Lane '64";
 			prevalence += vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+			// vmd.addColorIndex(GameLogic.MERCURY_FAWN);
+			// vmd.addColorIndex(GameLogic.MERCURY_CARNIVAL_RED);
+			// vmd.addColorIndex(GameLogic.MERCURY_PEACOCK);
+			// vmd.addColorIndex(GameLogic.MERCURY_PINK_FROST);
+			// vmd.addColorIndex(GameLogic.MERCURY_ANNIVERSARY_SILVER_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_SILVER_TURQUOISE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_BURGUNDY_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_BITTERSWEET);
+			// vmd.addColorIndex(GameLogic.MERCURY_PACIFIC_BLUE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_GLACIER_BLUE);
+			// vmd.addColorIndex(GameLogic.MERCURY_POLAR_WHITE);
+			// vmd.addColorIndex(GameLogic.MERCURY_PALOMINO);
+			// vmd.addColorIndex(GameLogic.MERCURY_PLATINUM_BEIGE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_YELLOW_MIST);
+			// vmd.addColorIndex(GameLogic.MERCURY_AZTEC_GOLD);
 
 		// Mercury Park Lane Vinyl Top '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000126r, VS_USED );
@@ -104,10 +115,21 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			vmd.stockQM = qm_stock_Duhen_SunStrip_1_8_DVC;	vmd.fullQM = qm_full_Duhen_SunStrip_1_8_DVC;
 			vmd.vehicleName = "Mercury Park Lane Vinyl Top '64";
 			prevalence += vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+			// vmd.addColorIndex(GameLogic.MERCURY_FAWN);
+			// vmd.addColorIndex(GameLogic.MERCURY_CARNIVAL_RED);
+			// vmd.addColorIndex(GameLogic.MERCURY_PEACOCK);
+			// vmd.addColorIndex(GameLogic.MERCURY_PINK_FROST);
+			// vmd.addColorIndex(GameLogic.MERCURY_ANNIVERSARY_SILVER_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_SILVER_TURQUOISE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_BURGUNDY_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_BITTERSWEET);
+			// vmd.addColorIndex(GameLogic.MERCURY_PACIFIC_BLUE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_GLACIER_BLUE);
+			// vmd.addColorIndex(GameLogic.MERCURY_POLAR_WHITE);
+			// vmd.addColorIndex(GameLogic.MERCURY_PALOMINO);
+			// vmd.addColorIndex(GameLogic.MERCURY_PLATINUM_BEIGE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_YELLOW_MIST);
+			// vmd.addColorIndex(GameLogic.MERCURY_AZTEC_GOLD);
 
 		// Mercury Park Lane White Top '64 //
 			vmd=new VehicleModel( cars.racers.Duhen:0x00000127r, VS_USED );
@@ -121,10 +143,21 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			vmd.stockQM = qm_stock_Duhen_SunStrip_2_2_DVC;	vmd.fullQM = qm_full_Duhen_SunStrip_2_2_DVC;
 			vmd.vehicleName = "Mercury Park Lane White Top '64";
 			prevalence += vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+			// vmd.addColorIndex(GameLogic.MERCURY_FAWN);
+			// vmd.addColorIndex(GameLogic.MERCURY_CARNIVAL_RED);
+			// vmd.addColorIndex(GameLogic.MERCURY_PEACOCK);
+			// vmd.addColorIndex(GameLogic.MERCURY_PINK_FROST);
+			// vmd.addColorIndex(GameLogic.MERCURY_ANNIVERSARY_SILVER_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_SILVER_TURQUOISE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_BURGUNDY_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_BITTERSWEET);
+			// vmd.addColorIndex(GameLogic.MERCURY_PACIFIC_BLUE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_GLACIER_BLUE);
+			// vmd.addColorIndex(GameLogic.MERCURY_POLAR_WHITE);
+			// vmd.addColorIndex(GameLogic.MERCURY_PALOMINO);
+			// vmd.addColorIndex(GameLogic.MERCURY_PLATINUM_BEIGE_IRIDESCENT);
+			// vmd.addColorIndex(GameLogic.MERCURY_YELLOW_MIST);
+			// vmd.addColorIndex(GameLogic.MERCURY_AZTEC_GOLD);
 
 	// CAREER mode -> new car dealer //
 		// Mercury Park Lane '64 //
@@ -268,24 +301,21 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 
 
 		// make color indexes //
-		addColorIndex(GameLogic.RID_CARCOLOR_Baiern_Devils_eye_red);
-		addColorIndex(GameLogic.RID_CARCOLOR_Baiern_Spring_yellow);
-
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Zucker);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Tornado_rot);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Nacht);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Smaragd);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Black_mage);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Hamvas_Grun);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Indigo);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Jazz);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Antracit);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Mercator_Blau);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Murano);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Champagner);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Ozean);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Reflex);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Saratoga);
+		addColorIndex(GameLogic.MERCURY_FAWN);
+		addColorIndex(GameLogic.MERCURY_CARNIVAL_RED);
+		addColorIndex(GameLogic.MERCURY_PEACOCK);
+		addColorIndex(GameLogic.MERCURY_PINK_FROST);
+		addColorIndex(GameLogic.MERCURY_ANNIVERSARY_SILVER_IRIDESCENT);
+		addColorIndex(GameLogic.MERCURY_SILVER_TURQUOISE_IRIDESCENT);
+		addColorIndex(GameLogic.MERCURY_BURGUNDY_IRIDESCENT);
+		addColorIndex(GameLogic.MERCURY_BITTERSWEET);
+		addColorIndex(GameLogic.MERCURY_PACIFIC_BLUE_IRIDESCENT);
+		addColorIndex(GameLogic.MERCURY_GLACIER_BLUE);
+		addColorIndex(GameLogic.MERCURY_POLAR_WHITE);
+		addColorIndex(GameLogic.MERCURY_PALOMINO);
+		addColorIndex(GameLogic.MERCURY_PLATINUM_BEIGE_IRIDESCENT);
+		addColorIndex(GameLogic.MERCURY_YELLOW_MIST);
+		addColorIndex(GameLogic.MERCURY_AZTEC_GOLD);
 
 //		prevalence *= 1000.0;
 	}
