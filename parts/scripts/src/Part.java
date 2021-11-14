@@ -53,6 +53,8 @@ public class Part extends GameType
 	float	price_used	= 0.7;	//rel. to catalog
 	float	price_repair	= 0.8;	//rel. to price diff.
 
+	float	huf_ratio = 400;
+
 	Ypr	catalog_view_ypr= null;
 
 	float	repair_min_wear = 0.1;	//below this % it can't be repaired
@@ -537,17 +539,17 @@ public class Part extends GameType
 
 	public float HUF2USD(float huf)
 	{
-		return huf/211.0;
+		return huf/huf_ratio;
 	}
 
 	public float tHUF2USD(float huf)
 	{
-		return huf*1000.0/211.0;
+		return huf*1000.0/huf_ratio;
 	}
 
 	public float mHUF2USD(float huf)
 	{
-		return huf*1000000.0/211.0;
+		return huf*1000000.0/huf_ratio;
 	}
 
 	public float Inch2Meter(float i)

@@ -6,13 +6,13 @@ import java.game.parts.*;
 
 public class EngineModels extends Part
 {
-	private float number;
-	private float number2;
-	private float number3;
-	private float number4;
-	private int motor;
+	private static float number;
+	private static float number2;
+	private static float number3;
+	private static float number4;
+	private static int motor;
 	
-	public int[] getGmEngine(){
+	public static int[] getGmEngine(){
 		number = random();
 		int[] stock_parts_list_E  = new int[34];
 		stock_parts_list_E[ 0] = parts:0x000053FFr; // "stock battery" //

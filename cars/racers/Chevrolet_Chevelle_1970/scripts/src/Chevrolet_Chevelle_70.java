@@ -20,7 +20,7 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 
 		description = "1970 saw the introduction of the most powerful Chevelle SS of all time by adding a new 454 cubic engine. The entry level 454 was known as the LS5 and packed 360bhp. The top engine choice was the LS6 version with 450bhp. The LS6 had a 800-cfm Holley four barrel on an aluminum manifold, 11.25:1 compression, etc. No production engine ever had a higher factory horsepower rating. This was truly the pinnacle of the Chevelle SS performance.";
 		
-		value = mHUF2USD(1.242);
+		value = mHUF2USD(1.342);
 		brand_new_prestige_value = 91.20;
 
 		fully_stripped_drag = 0.55;
@@ -32,11 +32,8 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //
-
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getGmEngine();
+		// stock 1 stuffs //	
+		stock_parts_list_E = EngineModels.getGmEngine();
 
 		stock_parts_list_FL = new int[3];
 		stock_parts_list_FL[ 0] = cars.racers.Chevrolet_Chevelle_1970:0x000000A8r; // "L headlights" //

@@ -84,7 +84,34 @@ public class GameLogic extends GameType implements Runnable
 	final static int RID_CARCOLOR_Used_Rusty_Nacht	      = 19;
 	final static int RID_CARCOLOR_Used_Rusty_Zucker       = 20;
 
-	final static int[] CARCOLORS = new int[21];
+	final static int CHEVROLET_CLASSIC_WHITE		= 21;
+	final static int CHEVROLET_CORTEZ_SILVER		= 22;
+	final static int CHEVROLET_LAGUNA_GRAY			= 23;
+	final static int CHEVROLET_SHADOW_GRAY			= 24;
+	final static int CHEVROLET_ASTRO_BLUE			= 25;
+	final static int CHEVROLET_MULSANNE_BLUE		= 26;
+	final static int CHEVROLET_BRIDGEHAMPTON_BLUE	= 27;
+	final static int CHEVROLET_FATHOM_BLUE			= 28;
+	final static int CHEVROLET_MISTY_TURQUOISE		= 29;
+	final static int CHEVROLET_CITRUS_GREEN			= 30;
+	final static int CHEVROLET_DONNYBROOK_GREEN		= 31;
+	final static int CHEVROLET_GREEN_MIST			= 32;
+	final static int CHEVROLET_FOREST_GREEN			= 33;
+	final static int CHEVROLET_GOBI_BEIGE			= 34;
+	final static int CHEVROLET_DAYTONA_YELLOW		= 35;
+	final static int CHEVROLET_CAMARO_GOLD			= 36;
+	final static int CHEVROLET_CHAMPAGNE_GOLD		= 37;
+	final static int CHEVROLET_AUTUMN_GOLD			= 38;
+	final static int CHEVROLET_CARAMEL_BRONZE		= 39;
+	final static int CHEVROLET_DESERT_SAND			= 40;
+	final static int CHEVROLET_CLASSIC_COPPER		= 41;
+	final static int CHEVROLET_MONZA_RED			= 42;
+	final static int CHEVROLET_CRANBERRY_RED		= 43;
+	final static int CHEVROLET_MARLBORO_MAROON		= 44;
+	final static int CHEVROLET_BLACK_CHERRY			= 45;
+	final static int CHEVROLET_TUXEDO_BLACK			= 46;
+
+	public static int[] CARCOLORS = new int[47];
 
 	final static String	carrerSaveDir = "save/carrer/";
 	final static String	tempSaveDir = "save/temp/";
@@ -199,6 +226,34 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Smaragd]      = cars:0x00000066r;
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Nacht]        = cars:0x00000067r;
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Zucker]       = cars:0x00000068r;
+		CARCOLORS[CHEVROLET_CLASSIC_WHITE]		        = cars:0x00000A2Ar;
+		CARCOLORS[CHEVROLET_CORTEZ_SILVER]		  	 	= cars:0x00000A2Br;
+		CARCOLORS[CHEVROLET_LAGUNA_GRAY]		  	 	= cars:0x00000A2Cr;
+		CARCOLORS[CHEVROLET_SHADOW_GRAY]		  	 	= cars:0x00000A2Dr;
+		CARCOLORS[CHEVROLET_ASTRO_BLUE]			  	 	= cars:0x00000A2Er;
+		CARCOLORS[CHEVROLET_MULSANNE_BLUE]		  	 	= cars:0x00000A2Fr;
+		CARCOLORS[CHEVROLET_BRIDGEHAMPTON_BLUE]	  	 	= cars:0x00000A30r;
+		CARCOLORS[CHEVROLET_FATHOM_BLUE]	  	 		= cars:0x00000A31r;
+		CARCOLORS[CHEVROLET_MISTY_TURQUOISE]  	 		= cars:0x00000A32r;
+		CARCOLORS[CHEVROLET_CITRUS_GREEN] 	 	 		= cars:0x00000A33r;
+		CARCOLORS[CHEVROLET_DONNYBROOK_GREEN]	 	 	= cars:0x00000A34r;
+		CARCOLORS[CHEVROLET_GREEN_MIST]			 	 	= cars:0x00000A35r;
+		CARCOLORS[CHEVROLET_FOREST_GREEN]		 	 	= cars:0x00000A36r;
+		CARCOLORS[CHEVROLET_GOBI_BEIGE]			 	 	= cars:0x00000A37r;
+		CARCOLORS[CHEVROLET_DAYTONA_YELLOW]		 	 	= cars:0x00000A38r;
+		CARCOLORS[CHEVROLET_CAMARO_GOLD]		 	 	= cars:0x00000A39r;
+		CARCOLORS[CHEVROLET_CHAMPAGNE_GOLD]		 	 	= cars:0x00000A3Ar;
+		CARCOLORS[CHEVROLET_AUTUMN_GOLD]		 	 	= cars:0x00000A3Br;
+		CARCOLORS[CHEVROLET_CARAMEL_BRONZE]		 	 	= cars:0x00000A3Cr;
+		CARCOLORS[CHEVROLET_DESERT_SAND]		 	 	= cars:0x00000A3Dr;
+		CARCOLORS[CHEVROLET_CLASSIC_COPPER]		 	 	= cars:0x00000A3Er;
+		CARCOLORS[CHEVROLET_MONZA_RED]		 		 	= cars:0x00000A3Fr;
+		CARCOLORS[CHEVROLET_CRANBERRY_RED]	 		 	= cars:0x00000A40r;
+		CARCOLORS[CHEVROLET_MARLBORO_MAROON] 		 	= cars:0x00000A41r;
+		CARCOLORS[CHEVROLET_BLACK_CHERRY]	 		 	= cars:0x00000A42r;
+		CARCOLORS[CHEVROLET_TUXEDO_BLACK]	 		 	= cars:0x00000A43r;
+
+
 
 		kismajom = new String[5];
 		kismajom[0] = "mfunfspd";	// letmeroc
@@ -1251,5 +1306,14 @@ public class GameLogic extends GameType implements Runnable
 		saved = 0;
 
 		carrerInProgress = 0;
+	}
+
+	public static void addColor( int color ) {
+		int[] newColorArray = new int[CARCOLORS.length + 1];
+
+		System.arraycopy(CARCOLORS, 0, newColorArray, 0, CARCOLORS.length);
+		newColorArray[CARCOLORS.length] = color;
+		
+		CARCOLORS = newColorArray;
 	}
 }
