@@ -59,34 +59,34 @@ public class Plymouth_Fury_69_VT extends VehicleType
 			vtdarr.addElement( vmd );
 			vmd.prevalence = 1800.0;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
 			vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=401;	vmd.fullPrestige= 422;
 			vmd.stockQM = qm_stock_Ishima_Enula_WRY;	vmd.fullQM = qm_full_Ishima_Enula_WRY;
 			vmd.vehicleName = "Plymouth Sport Fury '69";
 			prevalence += vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
 
-		// Plymouth Sport Fury '69 //
-			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_USED );
-			vtdarr.addElement( vmd );
-			vmd.prevalence = 1800.0;
-			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
-			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
-			vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
-			vmd.stockPrestige=440;	vmd.fullPrestige= 473;
-			vmd.stockQM = qm_stock_Ishima_Enula_WRZ;	vmd.fullQM = qm_full_Ishima_Enula_WRZ;
-			vmd.vehicleName = "Plymouth Sport Fury '69";
-			prevalence += vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+		// Plymouth Sport Fury Vinyl Top '69 // This model has been deleted from package, find out why.
+			// vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_USED );
+			// vtdarr.addElement( vmd );
+			// vmd.prevalence = 1800.0;
+			// vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
+			// vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			// vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
+			// vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
+			// vmd.stockPrestige=440;	vmd.fullPrestige= 473;
+			// vmd.stockQM = qm_stock_Ishima_Enula_WRZ;	vmd.fullQM = qm_full_Ishima_Enula_WRZ;
+			// vmd.vehicleName = "Plymouth Sport Fury '69";
+			// prevalence += vmd.prevalence;
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
 
 	// CAREER mode -> new car dealer //
 		// Plymouth Sport Fury '69 //

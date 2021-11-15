@@ -32,10 +32,8 @@ public class Plymouth_Fury_69 extends Plymouth_Fury_69_models
 	public void addStockParts( Descriptor desc )
 	{
 		float number = random();
-		float number2;
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getChryslerEngine();
+		float number2;		
+		stock_parts_list_E = EngineModels.getChryslerEngine();
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.enula:0x0000011Dr; // "L headlights" //
@@ -114,169 +112,12 @@ public class Plymouth_Fury_69 extends Plymouth_Fury_69_models
 
 		stock_parts_list_RGear_wheels = new int[4];
 		stock_parts_list_RGear_tyres = new int[4];
+		stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
+		stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
+		stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
+		stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
 		
-		switch ( stock_parts_list_E[ 1] )
-		{
-			case parts.engines.Chrysler_V8_pak:0x0000E318r:
-				stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
-				stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
-				stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
-				stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
-				break;
-			case parts.engines.Chrysler_V8_pak:0x0000E360r:
-				number = random();
-
-				stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
-				stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
-				
-				number2 = random();
-				
-				if ( number2 < 0.66 )
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
-				}
-				else
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000110Cr; //
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00001117r; //
-				}
-				break;
-			case parts.engines.Chrysler_V8_pak:0x0000E361r:
-				number = random();
-
-				stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
-				stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
-				
-				number2 = random();
-				
-				if ( number2 < 0.66 )
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
-				}
-				else
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000110Cr; //
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00001117r; //
-				}
-				break;
-			case parts.engines.Chrysler_V8_pak:0x0000E383r:
-				number = random();
-				
-				stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
-				stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
-				
-				if ( number < 0.46 )
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
-				}
-				else
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000110Cr; //
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00001117r; //
-				}
-				break;
-			case parts.engines.Chrysler_V8_pak:0x0000E400r:
-				number = random();
-				
-				stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
-				stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
-				
-				if ( number < 0.32 )
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
-				}
-				else
-				{
-					stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000110Cr; //
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00001117r; //
-				}
-				break;
-			case parts.engines.Chrysler_V8_pak:0x0000E440r:
-				number = random();
-				
-				if ( number < 0.42 )
-				{
-					stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.enula:0x0000010Cr; // 
-					stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.enula:0x00000117r; // 
-					
-					number2 = random();
-					
-					if ( number2 < 0.4 )
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000010Cr; // 
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00000117r; //
-					}
-					else
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.enula:0x0000110Cr; //
-					stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.enula:0x00001117r; //
-					}
-				}
-				else
-				{
-					stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = parts.mopar_wheels:0x0000D915r; // Cragar G/T 15x8
-					stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.Nonus:0x000020C0r; // Goodyear Eagle ST 215/60
-					
-					number2 = random();
-					
-					if ( number2 < 0.5 )
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = parts.mopar_wheels:0x0000D915r; // Cragar G/T 15x8
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Nonus:0x000020C0r; // Goodyear Eagle ST 215/60
-					}
-					else
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = parts.mopar_wheels:0x0000D9C5r; // Cragar G/T 15x11
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Nonus:0x00002AC0r; // Goodyear Eagle ST 255/60
-					}
-				}
-				break;
-			case parts.engines.Chrysler_V8_pak:0x0000E426r:
-				number = random();
-				
-				if ( number < 0.32 )
-				{
-					stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.MC:0x0000210Br; // Cragar black 15x8
-					stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.Nonus:0x000020C0r; // Goodyear Eagle ST 215/60
-					
-					number2 = random();
-					
-					if ( number2 < 0.5 )
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.MC:0x0000210Br; // Cragar black 15x8
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Nonus:0x000020C0r; // Goodyear Eagle ST 215/60
-					}
-					else
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.MC:0x0000220Br; // Cragar black 15x10
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Nonus:0x00002AC0r; // Goodyear Eagle ST 255/60
-					}
-				}
-				else
-				{
-					stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = parts.mopar_wheels:0x0000D915r; // Cragar G/T 15x8
-					stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.Nonus:0x000020C0r; // Goodyear Eagle ST 215/60
-					
-					number2 = random();
-					
-					if ( number2 < 0.5 )
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = parts.mopar_wheels:0x0000D915r; // Cragar G/T 15x8
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Nonus:0x000020C0r; // Goodyear Eagle ST 215/60
-					}
-					else
-					{
-						stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = parts.mopar_wheels:0x0000D9C5r; // Cragar G/T 15x11
-						stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Nonus:0x00002AC0r; // Goodyear Eagle ST 255/60
-					}
-				}
-				break;
-		}
-
+		
 		super.addStockParts( desc );
 
 		addPart( cars.racers.Enula:0x0000011Cr, "steering wheel" );
