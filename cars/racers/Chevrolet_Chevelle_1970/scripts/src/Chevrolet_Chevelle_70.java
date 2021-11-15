@@ -107,16 +107,16 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 		stock_parts_list_RGear_brakes[ 2] = stock_parts_list_RGear_brakes[ 3] = parts:0x0000016Fr; // "brake_MC_GT_rear" //
 		
 		stock_parts_list_RGear_brakes = new int[4];
-		stock_parts_list_RGear_brakes[ 0] = stock_parts_list_RGear_brakes[ 1] = cars.racers.El_Camino70:0x00001565r; // "brake_Focer_200_front" //
-		stock_parts_list_RGear_brakes[ 2] = stock_parts_list_RGear_brakes[ 3] = cars.racers.El_Camino70:0x00001566r; // "brake_Focer_200_rear" //
+		stock_parts_list_RGear_brakes[ 0] = stock_parts_list_RGear_brakes[ 1] = cars.racers.Chevrolet_El_Camino_1970:0x00001565r; // "brake_Focer_200_front" //
+		stock_parts_list_RGear_brakes[ 2] = stock_parts_list_RGear_brakes[ 3] = cars.racers.Chevrolet_El_Camino_1970:0x00001566r; // "brake_Focer_200_rear" //
 
 		stock_parts_list_RGear_wheels = new int[4];
-		stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.El_Camino70:0x00001165r; // "rim Star_II 8.5 17 ET -30 LOD CATALOG GARAGE" //
-		stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.El_Camino70:0x00001165r; // "rim Star_II 8.5 17 ET -30 LOD CATALOG GARAGE" //
+		stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.Chevrolet_El_Camino_1970:0x00001165r; // "rim Star_II 8.5 17 ET -30 LOD CATALOG GARAGE" //
+		stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.Chevrolet_El_Camino_1970:0x00001165r; // "rim Star_II 8.5 17 ET -30 LOD CATALOG GARAGE" //
 
 		stock_parts_list_RGear_tyres = new int[4];
-		stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.El_Camino70:0x00001466r; // "Tire" //
-		stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.El_Camino70:0x00001466r; // "Tire" //
+		stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.Chevrolet_El_Camino_1970:0x00001466r; // "Tire" //
+		stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.Chevrolet_El_Camino_1970:0x00001466r; // "Tire" //
 
 		super.addStockParts( desc );
 
