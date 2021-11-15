@@ -7,6 +7,7 @@ public class Dodge_330_63_VT extends VehicleType
 	public Dodge_330_63_VT( int id )
 	{
 		VehicleModel vmd;
+		float totalProduction = 1481.94;
 
 	// DEMO mode //
 		// Dodge 330 '63 //
@@ -36,25 +37,25 @@ public class Dodge_330_63_VT extends VehicleType
 		// Dodge 330 '63 //
 			vmd=new VehicleModel( cars.racers.Einvagen:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
 			vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=204;	vmd.fullPrestige= 244;
 			vmd.stockQM = qm_stock_Einvagen_110_GT;	vmd.fullQM = qm_full_Einvagen_110_GT;
 			vmd.vehicleName = "Dodge 330 '63";
 			prevalence = vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
 
 	// CAREER mode -> new car dealer //
 		// Dodge 330 '63 //
 			vmd=new VehicleModel( cars.racers.Einvagen:0x00000006r, VS_STOCK );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1000.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -68,7 +69,7 @@ public class Dodge_330_63_VT extends VehicleType
 		// Dodge 330 '63 //
 			vmd=new VehicleModel( cars.racers.Einvagen:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction*1.2;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.8;	vmd.maxTear	= 1.0;
@@ -80,7 +81,7 @@ public class Dodge_330_63_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Einvagen:0x00000006r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction*1.15;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.8;	vmd.maxTear	= 1.0;
@@ -92,7 +93,7 @@ public class Dodge_330_63_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Einvagen:0x00000006r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1500.0;
+			vmd.prevalence = totalProduction*0.9;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 0.8;	vmd.maxTear	= 1.0;
@@ -103,21 +104,22 @@ public class Dodge_330_63_VT extends VehicleType
 			prevalence = vmd.prevalence;
 
 		// make color indexes //
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Zucker);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Tornado_rot);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Nacht);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Smaragd);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Black_mage);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Hamvas_Grun);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Indigo);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Jazz);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Antracit);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Mercator_Blau);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Murano);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Champagner);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Ozean);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Reflex);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Saratoga);
+		addColorIndex(GameLogic.DODGE_TURQUOISE);
+		addColorIndex(GameLogic.DODGE_DARK_TURQUOISE);
+		addColorIndex(GameLogic.DODGE_LIGHT_BLUE);
+		addColorIndex(GameLogic.DODGE_IVORY);
+		addColorIndex(GameLogic.DODGE_MEDIUM_BLUE);
+		addColorIndex(GameLogic.DODGE_STEEL_GRAY);
+		addColorIndex(GameLogic.DODGE_DARK_BLUE);
+		addColorIndex(GameLogic.DODGE_VERMILION);
+		addColorIndex(GameLogic.DODGE_LIGHT_BLUE);
+		addColorIndex(GameLogic.DODGE_POLAR);
+		addColorIndex(GameLogic.DODGE_FOREST_GREEN);
+		addColorIndex(GameLogic.DODGE_BEIGE);
+		addColorIndex(GameLogic.DODGE_AQUA);
+		addColorIndex(GameLogic.DODGE_SANDALWOOD);
+		addColorIndex(GameLogic.DODGE_SLATE_TURQUOISE);
+		addColorIndex(GameLogic.DODGE_CORDOVAN);
 
 //		prevalence *= 1000.0;
 	}

@@ -126,6 +126,23 @@ public class GameLogic extends GameType implements Runnable
 	final static int MERCURY_PLATINUM_BEIGE_IRIDESCENT		= colorNumber++;
 	final static int MERCURY_YELLOW_MIST					= colorNumber++;
 	final static int MERCURY_AZTEC_GOLD						= colorNumber++;
+	final static int DODGE_TURQUOISE			= colorNumber++;
+	final static int DODGE_DARK_TURQUOISE		= colorNumber++;
+	final static int DODGE_LIGHT_BLUE			= colorNumber++;
+	final static int DODGE_IVORY				= colorNumber++;
+	final static int DODGE_MEDIUM_BLUE			= colorNumber++;
+	final static int DODGE_STEEL_GRAY			= colorNumber++;
+	final static int DODGE_DARK_BLUE			= colorNumber++;
+	final static int DODGE_VERMILION			= colorNumber++;
+	final static int DODGE_LIGHT_GREEN			= colorNumber++;
+	final static int DODGE_POLAR				= colorNumber++;
+	final static int DODGE_FOREST_GREEN			= colorNumber++;
+	final static int DODGE_BEIGE				= colorNumber++;
+	final static int DODGE_AQUA					= colorNumber++;
+	final static int DODGE_SANDALWOOD			= colorNumber++;
+	final static int DODGE_SLATE_TURQUOISE		= colorNumber++;
+	final static int DODGE_CORDOVAN				= colorNumber++;
+
 
 	public static int[] CARCOLORS = new int[colorNumber];
 
@@ -283,6 +300,22 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[MERCURY_PLATINUM_BEIGE_IRIDESCENT]	= cars:0x00000A51r;
 		CARCOLORS[MERCURY_YELLOW_MIST]					= cars:0x00000A52r;
 		CARCOLORS[MERCURY_AZTEC_GOLD]					= cars:0x00000A53r;
+		CARCOLORS[DODGE_TURQUOISE]					= cars:0x00000A55r;
+		CARCOLORS[DODGE_DARK_TURQUOISE]				= cars:0x00000A56r;
+		CARCOLORS[DODGE_LIGHT_BLUE]					= cars:0x00000A57r;
+		CARCOLORS[DODGE_IVORY]						= cars:0x00000A58r;
+		CARCOLORS[DODGE_MEDIUM_BLUE]				= cars:0x00000A59r;
+		CARCOLORS[DODGE_STEEL_GRAY]					= cars:0x00000A5Ar;
+		CARCOLORS[DODGE_DARK_BLUE]					= cars:0x00000A5Br;
+		CARCOLORS[DODGE_VERMILION]					= cars:0x00000A5Cr;
+		CARCOLORS[DODGE_LIGHT_GREEN]				= cars:0x00000A5Dr;
+		CARCOLORS[DODGE_POLAR]						= cars:0x00000A5Er;
+		CARCOLORS[DODGE_FOREST_GREEN]				= cars:0x00000A5Fr;
+		CARCOLORS[DODGE_BEIGE]						= cars:0x00000A60r;
+		CARCOLORS[DODGE_AQUA]						= cars:0x00000A61r;
+		CARCOLORS[DODGE_SANDALWOOD]					= cars:0x00000A62r;
+		CARCOLORS[DODGE_SLATE_TURQUOISE]			= cars:0x00000A63r;
+		CARCOLORS[DODGE_CORDOVAN]					= cars:0x00000A64r;
 
 
 
@@ -1337,14 +1370,5 @@ public class GameLogic extends GameType implements Runnable
 		saved = 0;
 
 		carrerInProgress = 0;
-	}
-
-	public static void addColor( int color ) {
-		int[] newColorArray = new int[CARCOLORS.length + 1];
-
-		System.arraycopy(CARCOLORS, 0, newColorArray, 0, CARCOLORS.length);
-		newColorArray[CARCOLORS.length] = color;
-		
-		CARCOLORS = newColorArray;
 	}
 }

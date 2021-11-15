@@ -880,7 +880,7 @@ public class EngineModels extends Part
 		return stock_parts_list_E;
 	}
 	
-	public int[] getChryslerEngine(){
+	public static int[] getChryslerEngine(){
 		number = random();
 		int[] stock_parts_list_E  = new int[34];
 		stock_parts_list_E[ 0] = parts:0x000053FFr; // "stock battery" //

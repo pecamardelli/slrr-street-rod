@@ -81,7 +81,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			vtdarr.addElement( vmd );
 			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
 			vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=265;	vmd.fullPrestige= 286;
@@ -109,7 +109,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			vtdarr.addElement( vmd );
 			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
 			vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=292;	vmd.fullPrestige= 313;
@@ -137,7 +137,7 @@ public class Mercury_Park_Lane_64_VT extends VehicleType
 			vtdarr.addElement( vmd );
 			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
 			vmd.minWear	= 0.75;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=297;	vmd.fullPrestige= 317;
