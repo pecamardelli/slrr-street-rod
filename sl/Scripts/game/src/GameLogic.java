@@ -142,6 +142,30 @@ public class GameLogic extends GameType implements Runnable
 	final static int DODGE_SANDALWOOD			= colorNumber++;
 	final static int DODGE_SLATE_TURQUOISE		= colorNumber++;
 	final static int DODGE_CORDOVAN				= colorNumber++;
+	final static int PLYMOUTH_SILVER			= colorNumber++;
+	final static int PLYMOUTH_ICE_BLUE			= colorNumber++;
+	final static int PLYMOUTH_BLUE_FIRE			= colorNumber++;
+	final static int PLYMOUTH_JAMAICA_BLUE		= colorNumber++;
+	final static int PLYMOUTH_FROST_GREEN		= colorNumber++;
+	final static int PLYMOUTH_LIMELIGHT			= colorNumber++;
+	final static int PLYMOUTH_IVY_GREEN			= colorNumber++;
+	final static int PLYMOUTH_SAND_PEBBLE_BEIGE	= colorNumber++;
+	final static int PLYMOUTH_SEAFOAM_TURQUOISE	= colorNumber++;
+	final static int PLYMOUTH_BARRACUDA_ORANGE	= colorNumber++;
+	final static int PLYMOUTH_SCORCH_RED		= colorNumber++;
+	final static int PLYMOUTH_HONEY_BRONZE		= colorNumber++;
+	final static int PLYMOUTH_BRONZE_FIRE		= colorNumber++;
+	final static int PLYMOUTH_SADDLE_BRONZE		= colorNumber++;
+	final static int PLYMOUTH_ALPINE_WHITE		= colorNumber++;
+	final static int PLYMOUTH_BLACK_VELVET		= colorNumber++;
+	final static int PLYMOUTH_SUNFIRE_YELLOW	= colorNumber++;
+	final static int PLYMOUTH_YELLOW_GOLD		= colorNumber++;
+	final static int PLYMOUTH_SPANISH_GOLD		= colorNumber++;
+	final static int PLYMOUTH_CITRON_GOLD		= colorNumber++;
+	final static int PLYMOUTH_BAHAMA_YELLOW		= colorNumber++;
+	final static int PLYMOUTH_ORANGE			= colorNumber++;
+	final static int PLYMOUTH_RALLYE_GREEN		= colorNumber++;
+	final static int PLYMOUTH_VITAMIN_C			= colorNumber++;
 
 
 	public static int[] CARCOLORS = new int[colorNumber];
@@ -316,6 +340,30 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[DODGE_SANDALWOOD]					= cars:0x00000A62r;
 		CARCOLORS[DODGE_SLATE_TURQUOISE]			= cars:0x00000A63r;
 		CARCOLORS[DODGE_CORDOVAN]					= cars:0x00000A64r;
+		CARCOLORS[PLYMOUTH_SILVER]					= cars:0x00000A66r;
+		CARCOLORS[PLYMOUTH_ICE_BLUE]				= cars:0x00000A67r;
+		CARCOLORS[PLYMOUTH_BLUE_FIRE]				= cars:0x00000A68r;
+		CARCOLORS[PLYMOUTH_JAMAICA_BLUE]			= cars:0x00000A69r;
+		CARCOLORS[PLYMOUTH_FROST_GREEN]				= cars:0x00000A6Ar;
+		CARCOLORS[PLYMOUTH_LIMELIGHT]				= cars:0x00000A6Br;
+		CARCOLORS[PLYMOUTH_IVY_GREEN]				= cars:0x00000A6Cr;
+		CARCOLORS[PLYMOUTH_SAND_PEBBLE_BEIGE]		= cars:0x00000A6Dr;
+		CARCOLORS[PLYMOUTH_SEAFOAM_TURQUOISE]		= cars:0x00000A6Er;
+		CARCOLORS[PLYMOUTH_BARRACUDA_ORANGE]		= cars:0x00000A6Fr;
+		CARCOLORS[PLYMOUTH_SCORCH_RED]				= cars:0x00000A70r;
+		CARCOLORS[PLYMOUTH_HONEY_BRONZE]			= cars:0x00000A71r;
+		CARCOLORS[PLYMOUTH_BRONZE_FIRE]				= cars:0x00000A72r;
+		CARCOLORS[PLYMOUTH_SADDLE_BRONZE]			= cars:0x00000A73r;
+		CARCOLORS[PLYMOUTH_ALPINE_WHITE]			= cars:0x00000A74r;
+		CARCOLORS[PLYMOUTH_BLACK_VELVET]			= cars:0x00000A75r;
+		CARCOLORS[PLYMOUTH_SUNFIRE_YELLOW]			= cars:0x00000A76r;
+		CARCOLORS[PLYMOUTH_YELLOW_GOLD]				= cars:0x00000A77r;
+		CARCOLORS[PLYMOUTH_SPANISH_GOLD]			= cars:0x00000A78r;
+		CARCOLORS[PLYMOUTH_CITRON_GOLD]				= cars:0x00000A79r;
+		CARCOLORS[PLYMOUTH_BAHAMA_YELLOW]			= cars:0x00000A7Ar;
+		CARCOLORS[PLYMOUTH_ORANGE]					= cars:0x00000A7Br;
+		CARCOLORS[PLYMOUTH_RALLYE_GREEN]			= cars:0x00000A7Cr;
+		CARCOLORS[PLYMOUTH_VITAMIN_C]				= cars:0x00000A7Dr;
 
 
 

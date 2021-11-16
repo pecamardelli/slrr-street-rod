@@ -187,25 +187,31 @@ public class Plymouth_Fury_69_VT extends VehicleType
 			vmd.vehicleName = "Plymouth Sport Fury '69";
 
 		// make color indexes //
-		addColorIndex(GameLogic.RID_CARCOLOR_Baiern_Devils_eye_red);
-		addColorIndex(GameLogic.RID_CARCOLOR_Baiern_Spring_yellow);
+		addColorIndex(GameLogic.PLYMOUTH_SILVER);
+		addColorIndex(GameLogic.PLYMOUTH_ICE_BLUE);
+		addColorIndex(GameLogic.PLYMOUTH_BLUE_FIRE);
+		addColorIndex(GameLogic.PLYMOUTH_JAMAICA_BLUE);
+		addColorIndex(GameLogic.PLYMOUTH_FROST_GREEN);
+		addColorIndex(GameLogic.PLYMOUTH_LIMELIGHT);
+		addColorIndex(GameLogic.PLYMOUTH_IVY_GREEN);
+		addColorIndex(GameLogic.PLYMOUTH_SAND_PEBBLE_BEIGE);
+		addColorIndex(GameLogic.PLYMOUTH_SEAFOAM_TURQUOISE);
+		addColorIndex(GameLogic.PLYMOUTH_BARRACUDA_ORANGE);
+		addColorIndex(GameLogic.PLYMOUTH_SCORCH_RED);
+		addColorIndex(GameLogic.PLYMOUTH_HONEY_BRONZE);
+		addColorIndex(GameLogic.PLYMOUTH_BRONZE_FIRE);
+		addColorIndex(GameLogic.PLYMOUTH_SADDLE_BRONZE);
+		addColorIndex(GameLogic.PLYMOUTH_ALPINE_WHITE);
+		addColorIndex(GameLogic.PLYMOUTH_BLACK_VELVET);
+		addColorIndex(GameLogic.PLYMOUTH_SUNFIRE_YELLOW);
+		addColorIndex(GameLogic.PLYMOUTH_YELLOW_GOLD);
+		addColorIndex(GameLogic.PLYMOUTH_SPANISH_GOLD);
+		addColorIndex(GameLogic.PLYMOUTH_CITRON_GOLD);
+		addColorIndex(GameLogic.PLYMOUTH_BAHAMA_YELLOW);
+		addColorIndex(GameLogic.PLYMOUTH_ORANGE);
+		addColorIndex(GameLogic.PLYMOUTH_RALLYE_GREEN);
+		addColorIndex(GameLogic.PLYMOUTH_VITAMIN_C);
 
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Zucker);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Tornado_rot);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Nacht);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Smaragd);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Black_mage);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Hamvas_Grun);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Indigo);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Jazz);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Antracit);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Mercator_Blau);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Murano);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Champagner);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Ozean);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Reflex);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Saratoga);
-
-//		prevalence *= 1000.0;
+		prevalence *= 1000.0;
 	}
 }
