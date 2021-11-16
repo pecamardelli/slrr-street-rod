@@ -212,6 +212,6 @@ public class Plymouth_Fury_69_VT extends VehicleType
 		addColorIndex(GameLogic.PLYMOUTH_RALLYE_GREEN);
 		addColorIndex(GameLogic.PLYMOUTH_VITAMIN_C);
 
-		prevalence *= 1000.0;
+		//prevalence *= 1000.0;
 	}
 }
