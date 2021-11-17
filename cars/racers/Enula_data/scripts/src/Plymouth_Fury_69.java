@@ -20,7 +20,7 @@ public class Plymouth_Fury_69 extends Plymouth_Fury_69_models
 
 		description = "The Plymouth Fury is a model of automobile which was produced by Plymouth from 1955 to 1978. It was introduced for the 1956 model year as a sub-series of the Plymouth Belvedere, becoming a separate series one level above the contemporary Belvedere for 1959. The Fury was a full-size car from 1959 to 1961, then a mid-size car from 1962 to 1964, again a full-size car from 1965 to 1974, and again a mid-size car from 1975 to 1978. From 1975 to 1977 the Fury was sold alongside the full-size Plymouth Gran Fury.";
 
-		value = mHUF2USD(1.404);
+		value = mHUF2USD(2.004);
 		brand_new_prestige_value = 41.47;
 
 		fully_stripped_drag = 0.55;

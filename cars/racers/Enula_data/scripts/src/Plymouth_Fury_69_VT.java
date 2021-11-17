@@ -7,6 +7,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 	public Plymouth_Fury_69_VT( int id )
 	{
 		VehicleModel vmd;
+		float totalProduction = 669.06;
 
 	// DEMO mode //
 		// Plymouth Sport Fury '69 //
@@ -57,7 +58,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 		// Plymouth Sport Fury '69 //
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1800.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.75;	vmd.maxTear	= 1.0;
@@ -119,7 +120,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 		// Plymouth Sport Fury '69 //
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1900.0;
+			vmd.prevalence = totalProduction*1.2;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.8;	vmd.maxTear	= 1.0;
@@ -131,7 +132,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1800.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -142,7 +143,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction*0.8;
 			vmd.minPower	= 1.5;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.5;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -154,7 +155,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 		// Plymouth Sport Fury '69 //
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1800.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.6;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.6;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -166,7 +167,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction*1.2;
 			vmd.minPower	= 1.25;	vmd.maxPower	= 1.6;
 			vmd.minOptical	= 1.25;	vmd.maxOptical	= 1.6;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -177,7 +178,7 @@ public class Plymouth_Fury_69_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Enula:0x00000006r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1800.0;
+			vmd.prevalence = totalProduction*0.8;
 			vmd.minPower	= 1.25;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.25;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;

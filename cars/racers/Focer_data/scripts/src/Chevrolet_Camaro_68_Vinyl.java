@@ -21,7 +21,7 @@ public class Chevrolet_Camaro_68_Vinyl extends Chevrolet_Camaro_68_models
 
 		// easter egg: EE-RC200C on the LCD screen built into the dash //
 
-		value = mHUF2USD(1.15);
+		value = mHUF2USD(2.15);
 		brand_new_prestige_value = 50.0;
 
 		fully_stripped_drag = 0.55;
@@ -35,10 +35,8 @@ public class Chevrolet_Camaro_68_Vinyl extends Chevrolet_Camaro_68_models
 		// stock 1 stuffs //
 
 		float number = random();
-		float number2;
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getGmEngine();
+		float number2;		
+		stock_parts_list_E = EngineModels.getGmEngine();
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.focer:0x000000A3r; // "L headlights" //

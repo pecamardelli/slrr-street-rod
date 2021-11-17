@@ -20,7 +20,7 @@ public class Plymouth_Fury_69_Vinyl extends Plymouth_Fury_69_models
 
 		description = "The 1969 models included the Fury I, Fury II and Fury III, the sport-model Sport Fury and the top-line VIP. The 225 cubic-inch six-cylinder engine continued as standard on the Fury I, II and select III models, with the 318 cubic-inch V8 standard on the Sport Fury, some Fury III models and all VIP models plus the station wagon; a three-speed manual transmission was standard, with the TorqueFlite automatic transmission optional. The six-cylinder engine/three-speed manual transmission power team – along with the three-speed manual transmission on the 318 cubic-inch V8 – continued to be available until midway through the 1971 model year, after which all full-sized Plymouths were built with a V8 engine and automatic transmission.";
 
-		value = mHUF2USD(1.004);
+		value = mHUF2USD(2.044);
 		brand_new_prestige_value = 41.47;
 
 		fully_stripped_drag = 0.55;
@@ -32,10 +32,8 @@ public class Plymouth_Fury_69_Vinyl extends Plymouth_Fury_69_models
 	public void addStockParts( Descriptor desc )
 	{
 		float number = random();
-		float number2;
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getChryslerEngine();
+		float number2;		
+		stock_parts_list_E = EngineModels.getChryslerEngine();
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.enula:0x0000011Dr; // "L headlights" //
