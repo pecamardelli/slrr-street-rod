@@ -182,6 +182,17 @@ public class GameLogic extends GameType implements Runnable
 	final static int PLYMOUTH_ORANGE			= colorNumber++;
 	final static int PLYMOUTH_RALLYE_GREEN		= colorNumber++;
 	final static int PLYMOUTH_VITAMIN_C			= colorNumber++;
+	final static int FORD_FOLKESTONE_GRAY		= colorNumber++;
+	final static int FORD_YOSEMITE_GREEN		= colorNumber++;
+	final static int FORD_CLOUD_MIST_GRAY		= colorNumber++;
+	final static int FORD_ACADIA_GREEN			= colorNumber++;
+	final static int FORD_MANDARIN_MAROON		= colorNumber++;
+	final static int FORD_GARNET_MAROON			= colorNumber++;
+	final static int FORD_SAHARA_TAN			= colorNumber++;
+	final static int FORD_COSTWOLD_GRAY			= colorNumber++;
+	final static int FORD_COMO_BLUE				= colorNumber++;
+	final static int FORD_CIGARETTE_CREAM		= colorNumber++;
+	final static int FORD_LYON_BLUE				= colorNumber++;
 
 
 	public static int[] CARCOLORS = new int[colorNumber];
@@ -396,6 +407,16 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[PLYMOUTH_ORANGE]					= cars:0x00000A7Br;
 		CARCOLORS[PLYMOUTH_RALLYE_GREEN]			= cars:0x00000A7Cr;
 		CARCOLORS[PLYMOUTH_VITAMIN_C]				= cars:0x00000A7Dr;
+		CARCOLORS[FORD_FOLKESTONE_GRAY]				= cars:0x00000A7Fr;
+		CARCOLORS[FORD_YOSEMITE_GREEN]				= cars:0x00000A80r;
+		CARCOLORS[FORD_CLOUD_MIST_GRAY]				= cars:0x00000A81r;
+		CARCOLORS[FORD_ACADIA_GREEN]				= cars:0x00000A82r;
+		CARCOLORS[FORD_MANDARIN_MAROON]				= cars:0x00000A83r;
+		CARCOLORS[FORD_GARNET_MAROON]				= cars:0x00000A84r;
+		CARCOLORS[FORD_SAHARA_TAN]					= cars:0x00000A85r;
+		CARCOLORS[FORD_COSTWOLD_GRAY]				= cars:0x00000A86r;
+		CARCOLORS[FORD_COMO_BLUE]					= cars:0x00000A87r;
+		CARCOLORS[FORD_CIGARETTE_CREAM]				= cars:0x00000A88r;
 
 
 

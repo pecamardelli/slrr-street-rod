@@ -482,6 +482,6 @@ public class Chevrolet_Camaro_68_VT extends VehicleType
 		addColorIndex(GameLogic.CHEVROLET_BUTTERNUT_YELLOW);
 		addColorIndex(GameLogic.CHEVROLET_BRITISH_GREEN);
 
-		prevalence *= 1000.0;
+		//prevalence *= 1000.0;
 	}
 }
