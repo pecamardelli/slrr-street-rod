@@ -35,10 +35,8 @@ public class Chevrolet_Camaro_SS_Vinyl_68 extends Chevrolet_Camaro_68_models
 		// stock 1 stuffs //
 
 		float number = random();
-		float number2;
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getGmEngine();		
+		float number2;		
+		stock_parts_list_E = EngineModels.getGmEngine();		
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.focer:0x000000A3r; // "L headlights" //
