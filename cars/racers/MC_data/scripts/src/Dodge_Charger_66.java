@@ -20,7 +20,7 @@ public class Dodge_Charger_66 extends Dodge_Charger_66_models
 
 		description = "A mid-1966 surprise was Dodge's Coronet-based Charger fastback. Sharing its chassis and front-end sheet-metal with the mid-sized Dodge Coronet, the Charger still looked a lot like a Coronet or AMC’s conceptually similar Rambler Marlin substantially more expensive than either. The Charger with a $3,100 base price was immediately paired up in the automotive press with American Motors' year-old Marlin, another fastback specialty machine that came in at around $2,850 and some called the Charger a good-looking Marlin. The Charger's interior was different from all other cars with its back seats that folded down and created a station wagon or camper usefulness. The Charger didn't begin with the performance/ muscle car image, though you could get a Hemi with it. The Charger evolved into possibly the top Chrysler-made muscle car. The 1966 and 1967 model years of the Charger are also the only Dodge cars that displayed the Fratzog Emblem on the grill as well as the trunk hatch.";
 
-		value = mHUF2USD(1.842);
+		value = mHUF2USD(3.242);
 		brand_new_prestige_value = 51.20;
 
 		fully_stripped_drag = 0.55;

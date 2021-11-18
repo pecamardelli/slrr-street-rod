@@ -158,6 +158,20 @@ public class GameLogic extends GameType implements Runnable
 	final static int DODGE_SANDALWOOD			= colorNumber++;
 	final static int DODGE_SLATE_TURQUOISE		= colorNumber++;
 	final static int DODGE_CORDOVAN				= colorNumber++;
+
+	final static int DODGE_SILVER_IRIDESCENT	= colorNumber++;
+	final static int DODGE_DARK_GREEN			= colorNumber++;
+	final static int DODGE_BRIGHT_RED			= colorNumber++;
+	final static int DODGE_RED_IRIDESCENT		= colorNumber++;
+	final static int DODGE_YELLOW				= colorNumber++;
+	final static int DODGE_CREAM				= colorNumber++;
+	final static int DODGE_WHITE				= colorNumber++;
+	final static int DODGE_BRONZE_IRIDESCENT	= colorNumber++;
+	final static int DODGE_GOLD_IRIDESCENT		= colorNumber++;
+	final static int DODGE_SANDSTONE_IRIDESCENT	= colorNumber++;
+	final static int DODGE_MAUVE_IRIDESCENT		= colorNumber++;
+	final static int DODGE_MAROON_IRIDESCENT	= colorNumber++;
+
 	final static int PLYMOUTH_SILVER			= colorNumber++;
 	final static int PLYMOUTH_ICE_BLUE			= colorNumber++;
 	final static int PLYMOUTH_BLUE_FIRE			= colorNumber++;
@@ -383,6 +397,18 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[DODGE_SANDALWOOD]					= cars:0x00000A62r;
 		CARCOLORS[DODGE_SLATE_TURQUOISE]			= cars:0x00000A63r;
 		CARCOLORS[DODGE_CORDOVAN]					= cars:0x00000A64r;
+		CARCOLORS[DODGE_SILVER_IRIDESCENT]			= cars:0x00000A8Ar;
+		CARCOLORS[DODGE_DARK_GREEN]					= cars:0x00000A8Br;
+		CARCOLORS[DODGE_BRIGHT_RED]					= cars:0x00000A8Cr;
+		CARCOLORS[DODGE_RED_IRIDESCENT]				= cars:0x00000A8Dr;
+		CARCOLORS[DODGE_YELLOW]						= cars:0x00000A8Er;
+		CARCOLORS[DODGE_CREAM]						= cars:0x00000A8Fr;
+		CARCOLORS[DODGE_WHITE]						= cars:0x00000A90r;
+		CARCOLORS[DODGE_BRONZE_IRIDESCENT]			= cars:0x00000A91r;
+		CARCOLORS[DODGE_GOLD_IRIDESCENT]			= cars:0x00000A92r;
+		CARCOLORS[DODGE_SANDSTONE_IRIDESCENT]		= cars:0x00000A93r;
+		CARCOLORS[DODGE_MAUVE_IRIDESCENT]			= cars:0x00000A94r;
+		CARCOLORS[DODGE_MAROON_IRIDESCENT]			= cars:0x00000A95r;
 		CARCOLORS[PLYMOUTH_SILVER]					= cars:0x00000A66r;
 		CARCOLORS[PLYMOUTH_ICE_BLUE]				= cars:0x00000A67r;
 		CARCOLORS[PLYMOUTH_BLUE_FIRE]				= cars:0x00000A68r;
