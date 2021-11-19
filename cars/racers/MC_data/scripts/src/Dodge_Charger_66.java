@@ -33,10 +33,8 @@ public class Dodge_Charger_66 extends Dodge_Charger_66_models
 	public void addStockParts( Descriptor desc )
 	{
 		float number = random();
-		float number2;
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getChryslerEngine();
+		float number2;		
+		stock_parts_list_E = EngineModels.getChryslerEngine();
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.mc:0x000000A8r; // "L headlights" //

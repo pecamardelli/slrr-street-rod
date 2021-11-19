@@ -131,6 +131,6 @@ public class Dodge_Charger_66_VT extends VehicleType
 		addColorIndex(GameLogic.DODGE_MAUVE_IRIDESCENT);
 		addColorIndex(GameLogic.DODGE_MAROON_IRIDESCENT);
 
-		prevalence *= 1000.0;
+		//prevalence *= 1000.0;
 	}
 }
