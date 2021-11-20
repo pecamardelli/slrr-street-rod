@@ -7,6 +7,7 @@ public class Chevrolet_Impala_SS_67_VT extends VehicleType
 	public Chevrolet_Impala_SS_67_VT( int id )
 	{
 		VehicleModel vmd;
+		float totalProduction = 756.00;
 
 	// DEMO mode //
 		// Chevrolet Impala SS '67 //
@@ -36,9 +37,9 @@ public class Chevrolet_Impala_SS_67_VT extends VehicleType
 		// Chevrolet Impala SS '67 //
 			vmd=new VehicleModel( cars.racers.Nonus:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 2100.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.5;
-			vmd.minOptical	= 0.5;	vmd.maxOptical	= 1.5;
+			vmd.minOptical	= 0.95;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 0.55;	vmd.maxTear	= 1.0;
 			vmd.minWear	= 0.55;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=396;	vmd.fullPrestige= 460;
@@ -68,7 +69,7 @@ public class Chevrolet_Impala_SS_67_VT extends VehicleType
 		// Chevrolet Impala SS '67 //
 			vmd=new VehicleModel( cars.racers.Nonus:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1900.0;
+			vmd.prevalence = totalProduction*1.1;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -80,7 +81,7 @@ public class Chevrolet_Impala_SS_67_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.Nonus:0x00000006r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1900.0;
+			vmd.prevalence = totalProduction*0.9;
 			vmd.minPower	= 1.25;	vmd.maxPower	= 1.6;
 			vmd.minOptical	= 1.25;	vmd.maxOptical	= 1.6;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -92,7 +93,7 @@ public class Chevrolet_Impala_SS_67_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.Nonus:0x00000006r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1900.0;
+			vmd.prevalence = totalProduction*0.8;
 			vmd.minPower	= 1.55;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.55;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -104,25 +105,26 @@ public class Chevrolet_Impala_SS_67_VT extends VehicleType
 
 
 		// make color indexes //
-		addColorIndex(GameLogic.RID_CARCOLOR_Baiern_Devils_eye_red);
-		addColorIndex(GameLogic.RID_CARCOLOR_Baiern_Spring_yellow);
+		addColorIndex(GameLogic.CHEVROLET_ERMINE_WHITE);
+		addColorIndex(GameLogic.CHEVROLET_TAHOE_TURQUOISE_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_RALLY_RED);
+		addColorIndex(GameLogic.CHEVROLET_NANTUCKET_BLUE_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_ROYAL_PLUM_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_LYNNDALE_BLUE_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_DEEPWATER_BLUE_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_MADEIRA_MAROON_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_ELKHART_BLUE_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_MARINA_BLUE_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_BOLERO_RED);
+		addColorIndex(GameLogic.CHEVROLET_GOODWOOD_GREEN_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_GRANADA_GOLD_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_SIERRA_FAWN_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_SUNFIRE_YELLOW);
+		addColorIndex(GameLogic.CHEVROLET_MOUNTAIN_GREEN_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_CAPRI_CREAM);
+		addColorIndex(GameLogic.CHEVROLET_SILVER_PEARL_IRIDESCENT);
+		addColorIndex(GameLogic.CHEVROLET_EMERALD_TURQUOISE_IRIDESCENT);
 
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Zucker);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Tornado_rot);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Nacht);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Smaragd);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Black_mage);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Hamvas_Grun);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Indigo);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Jazz);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Antracit);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Mercator_Blau);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Murano);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Champagner);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Ozean);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Reflex);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Saratoga);
-
-//		prevalence *= 1000.0;
+		//prevalence *= 1000.0;
 	}
 }

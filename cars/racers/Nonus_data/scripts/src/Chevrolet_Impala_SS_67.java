@@ -20,10 +20,10 @@ public class Chevrolet_Impala_SS_67 extends Chevrolet_Impala_SS_67_models
 
 		description = "The 1967 Impala SS was less decorated than other Impalas; Super Sports had black grille accents and black-accented body-side and rear fender moldings. Lesser models leaned more toward brightwork inside and out. Buyers could choose either vinyl bucket seats with a center console, or a Strato-Bench seat with a fold-down center armrest. Standard wheel covers were the same as the optional full covers on other big Chevrolets, but the centers featured the SS logo surrounded by tri-color ring of red, white and blue. Chevrolet and Impala callouts on the body were all replaced by attractive Impala SS badges. Of the 76,055 Impala SS models built, just 2,124 were ordered with RPO Z24, a special performance package that included RPO F41 heavy-duty suspension and other performance goodies, RPO L36 (385 brake horsepower (287 kW) Turbo-Jet 427-cubic-inch (7.0 L) V8, as well as a special trim package that replaced the Impala SS badges with large SS427 emblems on the front grille and rear trim. None of these special cars had the name Impala anywhere on the body or interior, and Chevrolet often marketed them as the Chevrolet SS427, sans the Impala name. The Z24 package also included a special hood with fake chrome-plated intake. Only about 400 Super Sports had a six-cylinder engine from 1967 to 1968, 390 brake horsepower (290 kW) in 1969, or L72 (425 brake horsepower (317 kW)) from 1968 to 1969. Special SS427 badging, inside and out, was the rule, but few were sold, since muscle car enthusiasts were seeking big-block intermediates, such as the Chevelle SS396 and Plymouth Road Runner.";
 
-		value = mHUF2USD(1.195);
+		value = mHUF2USD(1.495);
 		brand_new_prestige_value = 45.80;
 
-		fully_stripped_drag = 0.61;
+		fully_stripped_drag = 0.48;
 
 		exhaustSlotIDList = new Vector();
 		exhaustSlotIDList.addElement( new Integer(998) );

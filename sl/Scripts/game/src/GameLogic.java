@@ -127,6 +127,26 @@ public class GameLogic extends GameType implements Runnable
 	final static int CHEVROLET_SEQUOIA_GREEN		= colorNumber++;
 	final static int CHEVROLET_BUTTERNUT_YELLOW		= colorNumber++;
 	final static int CHEVROLET_BRITISH_GREEN		= colorNumber++;
+	final static int CHEVROLET_ERMINE_WHITE			= colorNumber++;
+	final static int CHEVROLET_RALLY_RED			= colorNumber++;
+	final static int CHEVROLET_TAHOE_TURQUOISE_IRIDESCENT	= colorNumber++;
+	final static int CHEVROLET_NANTUCKET_BLUE_IRIDESCENT	= colorNumber++;
+	final static int CHEVROLET_ROYAL_PLUM_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_LYNNDALE_BLUE_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_DEEPWATER_BLUE_IRIDESCENT	= colorNumber++;
+	final static int CHEVROLET_MADEIRA_MAROON_IRIDESCENT	= colorNumber++;
+	final static int CHEVROLET_ELKHART_BLUE_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_MARINA_BLUE_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_BOLERO_RED					= colorNumber++;
+	final static int CHEVROLET_GOODWOOD_GREEN_IRIDESCENT	= colorNumber++;
+	final static int CHEVROLET_GRANADA_GOLD_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_SIERRA_FAWN_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_SUNFIRE_YELLOW				= colorNumber++;
+	final static int CHEVROLET_MOUNTAIN_GREEN_IRIDESCENT	= colorNumber++;
+	final static int CHEVROLET_CAPRI_CREAM					= colorNumber++;
+	final static int CHEVROLET_SILVER_PEARL_IRIDESCENT		= colorNumber++;
+	final static int CHEVROLET_EMERALD_TURQUOISE_IRIDESCENT	= colorNumber++;
+
 	final static int MERCURY_FAWN					= colorNumber++;
 	final static int MERCURY_CARNIVAL_RED			= colorNumber++;
 	final static int MERCURY_PEACOCK				= colorNumber++;
@@ -142,6 +162,7 @@ public class GameLogic extends GameType implements Runnable
 	final static int MERCURY_PLATINUM_BEIGE_IRIDESCENT		= colorNumber++;
 	final static int MERCURY_YELLOW_MIST					= colorNumber++;
 	final static int MERCURY_AZTEC_GOLD						= colorNumber++;
+
 	final static int DODGE_TURQUOISE			= colorNumber++;
 	final static int DODGE_DARK_TURQUOISE		= colorNumber++;
 	final static int DODGE_LIGHT_BLUE			= colorNumber++;
@@ -158,7 +179,6 @@ public class GameLogic extends GameType implements Runnable
 	final static int DODGE_SANDALWOOD			= colorNumber++;
 	final static int DODGE_SLATE_TURQUOISE		= colorNumber++;
 	final static int DODGE_CORDOVAN				= colorNumber++;
-
 	final static int DODGE_SILVER_IRIDESCENT	= colorNumber++;
 	final static int DODGE_DARK_GREEN			= colorNumber++;
 	final static int DODGE_BRIGHT_RED			= colorNumber++;
@@ -196,6 +216,7 @@ public class GameLogic extends GameType implements Runnable
 	final static int PLYMOUTH_ORANGE			= colorNumber++;
 	final static int PLYMOUTH_RALLYE_GREEN		= colorNumber++;
 	final static int PLYMOUTH_VITAMIN_C			= colorNumber++;
+
 	final static int FORD_FOLKESTONE_GRAY		= colorNumber++;
 	final static int FORD_YOSEMITE_GREEN		= colorNumber++;
 	final static int FORD_CLOUD_MIST_GRAY		= colorNumber++;
@@ -366,6 +387,26 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[CHEVROLET_SEQUOIA_GREEN]			 	= cars:0x00000A8Br;
 		CARCOLORS[CHEVROLET_BUTTERNUT_YELLOW]		 	= cars:0x00000A8Cr;
 		CARCOLORS[CHEVROLET_BRITISH_GREEN]			 	= cars:0x00000A8Dr;
+		CARCOLORS[CHEVROLET_ERMINE_WHITE]			 	= cars:0x00000A96r;
+		CARCOLORS[CHEVROLET_TAHOE_TURQUOISE_IRIDESCENT] 	= cars:0x00000A97r;
+		CARCOLORS[CHEVROLET_RALLY_RED] 						= cars:0x00000A98r;
+		CARCOLORS[CHEVROLET_NANTUCKET_BLUE_IRIDESCENT]		= cars:0x00000A99r;
+		CARCOLORS[CHEVROLET_ROYAL_PLUM_IRIDESCENT]			= cars:0x00000A9Ar;
+		CARCOLORS[CHEVROLET_LYNNDALE_BLUE_IRIDESCENT]		= cars:0x00000A9Br;
+		CARCOLORS[CHEVROLET_DEEPWATER_BLUE_IRIDESCENT]		= cars:0x00000A9Cr;
+		CARCOLORS[CHEVROLET_MADEIRA_MAROON_IRIDESCENT]		= cars:0x00000A9Dr;
+		CARCOLORS[CHEVROLET_ELKHART_BLUE_IRIDESCENT]		= cars:0x00000A9Er;
+		CARCOLORS[CHEVROLET_MARINA_BLUE_IRIDESCENT]			= cars:0x00000A9Fr;
+		CARCOLORS[CHEVROLET_BOLERO_RED]						= cars:0x00000AA0r;
+		CARCOLORS[CHEVROLET_GOODWOOD_GREEN_IRIDESCENT]		= cars:0x00000AA1r;
+		CARCOLORS[CHEVROLET_GRANADA_GOLD_IRIDESCENT]		= cars:0x00000AA2r;
+		CARCOLORS[CHEVROLET_SIERRA_FAWN_IRIDESCENT]			= cars:0x00000AA3r;
+		CARCOLORS[CHEVROLET_SUNFIRE_YELLOW]					= cars:0x00000AA4r;
+		CARCOLORS[CHEVROLET_MOUNTAIN_GREEN_IRIDESCENT]		= cars:0x00000AA5r;
+		CARCOLORS[CHEVROLET_CAPRI_CREAM]					= cars:0x00000AA6r;
+		CARCOLORS[CHEVROLET_SILVER_PEARL_IRIDESCENT]		= cars:0x00000AA7r;
+		CARCOLORS[CHEVROLET_EMERALD_TURQUOISE_IRIDESCENT]	= cars:0x00000AA8r;
+
 		CARCOLORS[MERCURY_FAWN]				 		 	= cars:0x00000A45r;
 		CARCOLORS[MERCURY_CARNIVAL_RED]				 	= cars:0x00000A46r;
 		CARCOLORS[MERCURY_PEACOCK]					 	= cars:0x00000A47r;
@@ -381,6 +422,7 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[MERCURY_PLATINUM_BEIGE_IRIDESCENT]	= cars:0x00000A51r;
 		CARCOLORS[MERCURY_YELLOW_MIST]					= cars:0x00000A52r;
 		CARCOLORS[MERCURY_AZTEC_GOLD]					= cars:0x00000A53r;
+
 		CARCOLORS[DODGE_TURQUOISE]					= cars:0x00000A55r;
 		CARCOLORS[DODGE_DARK_TURQUOISE]				= cars:0x00000A56r;
 		CARCOLORS[DODGE_LIGHT_BLUE]					= cars:0x00000A57r;
@@ -409,6 +451,7 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[DODGE_SANDSTONE_IRIDESCENT]		= cars:0x00000A93r;
 		CARCOLORS[DODGE_MAUVE_IRIDESCENT]			= cars:0x00000A94r;
 		CARCOLORS[DODGE_MAROON_IRIDESCENT]			= cars:0x00000A95r;
+
 		CARCOLORS[PLYMOUTH_SILVER]					= cars:0x00000A66r;
 		CARCOLORS[PLYMOUTH_ICE_BLUE]				= cars:0x00000A67r;
 		CARCOLORS[PLYMOUTH_BLUE_FIRE]				= cars:0x00000A68r;
@@ -433,6 +476,7 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[PLYMOUTH_ORANGE]					= cars:0x00000A7Br;
 		CARCOLORS[PLYMOUTH_RALLYE_GREEN]			= cars:0x00000A7Cr;
 		CARCOLORS[PLYMOUTH_VITAMIN_C]				= cars:0x00000A7Dr;
+
 		CARCOLORS[FORD_FOLKESTONE_GRAY]				= cars:0x00000A7Fr;
 		CARCOLORS[FORD_YOSEMITE_GREEN]				= cars:0x00000A80r;
 		CARCOLORS[FORD_CLOUD_MIST_GRAY]				= cars:0x00000A81r;
