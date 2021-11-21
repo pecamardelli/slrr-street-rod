@@ -21,7 +21,7 @@ public class Chevrolet_Camaro_68_Vinyl extends Chevrolet_Camaro_68_models
 
 		// easter egg: EE-RC200C on the LCD screen built into the dash //
 
-		value = mHUF2USD(2.15);
+		value = mHUF2USD(5.15);
 		brand_new_prestige_value = 50.0;
 
 		fully_stripped_drag = 0.55;

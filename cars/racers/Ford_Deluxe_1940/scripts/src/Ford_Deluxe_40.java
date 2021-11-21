@@ -20,7 +20,7 @@ public class Ford_Deluxe_40 extends Ford_Deluxe_40_models
 
 		description = "Ford Motor Company introduced its De Luxe Ford line in 1938 as an upscale alternative to bridge the gap between its base model (usually called Standard) and luxury Lincoln offerings. The 'Deluxe' name was used intermittently before and after this to specify an upscale trim, but the De Luxe Ford line was differentiated as a separate 'marque within a marque' with separate styling and pricing through 1940. During 1939, Ford had five lines of cars: Ford, De Luxe Ford, Mercury, Lincoln-Zephyr, and Lincoln. After the war, this was simplified to Ford, Mercury, and Lincoln. The 1941 Ford line included 'De Luxe' and 'Super De Luxe' trim, but these vehicles were not marketed as a separate line.";
 
-		value = mHUF2USD(1.03);
+		value = mHUF2USD(2.03);
 		brand_new_prestige_value = 32.50;
 
 		fully_stripped_drag = 0.61;

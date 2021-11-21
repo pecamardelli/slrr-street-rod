@@ -90,6 +90,6 @@ public class Chevelle_70_VT extends VehicleType
 		addColorIndex(GameLogic.CHEVROLET_CRANBERRY_RED);
 		addColorIndex(GameLogic.CHEVROLET_BLACK_CHERRY);
 
-		prevalence *= 1000.0;
+		//prevalence *= 1000.0;
 	}
 }

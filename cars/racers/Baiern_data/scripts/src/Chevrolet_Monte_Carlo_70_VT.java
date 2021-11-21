@@ -7,7 +7,7 @@ public class Chevrolet_Monte_Carlo_70_VT extends VehicleType
 	public Chevrolet_Monte_Carlo_70_VT( int id )
 	{
 		VehicleModel vmd;
-		float totalProduction = 1421.53;
+		float totalProduction = 1421.53/2;
 
 	// DEMO mode //
 		// Chevrolet Monte Carlo '70 //
