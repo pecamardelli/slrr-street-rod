@@ -21,10 +21,10 @@ public class Shelby_GT500_68 extends Ford_Mustang_models
 
 		description = "The Shelby Mustang is a high performance variant of the Ford Mustang which was built by Shelby from 1965 to 1968, and from 1969 to 1970 by Ford. Following the introduction of the fifth generation Ford Mustang in 2005, the Shelby nameplate was revived as a new high-performance model, this time designed and built by Ford. Beginning in April 1968, Ford began factory installing a version of the 428 engine known as the Cobra Jet. The G.T. 500 was subsequently known as The Cobra G.T. 500 KR. The initials KR stood for King of the road. Ford rated the Cobra jet at 335 horsepower (250 kW), but with 440 foot-pounds of torque at 3400 RPM, the horsepower was considered significantly underreported. Shelby's KR engine was left stock adding die-cast aluminum valve covers with Cobra Lemans to note Ford's FE engine family victory over Ferrari at Le Mans in 1966 and 1967.";
 
-		value = mHUF2USD(2.741);
+		value = mHUF2USD(5.741);
 		brand_new_prestige_value = 95.90;
 
-		fully_stripped_drag = 0.56;
+		fully_stripped_drag = 0.72;
 		brake_balance_can_be_set = 1;
 
 		exhaustSlotIDList = new Vector();
@@ -34,12 +34,8 @@ public class Shelby_GT500_68 extends Ford_Mustang_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //
-
-		float number = random();
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getFordEngine();
+		// stock 1 stuffs //		
+		stock_parts_list_E = EngineModels.getFordEngine();
 
 		stock_parts_list_FL = new int[1];
 		stock_parts_list_FL[ 0] = cars.racers.prime:0x000000DBr; // "FL quarterpanel" //

@@ -21,10 +21,10 @@ public class Ford_Mustang_Fastback_68 extends Ford_Mustang_models
 
 		description = "Changes for the 1968 model increased safety with a two-spoke energy-absorbing steering wheel, along with newly introduced shoulder belts. Other changes included front and rear side markers, FORD lettering removed from hood, rearview mirror moved from frame to windshield, a 302 cu in (4.9 L) V8 engine was now available, and C-Stripe graphics were added. The 1968 Ford Mustang GT Fastback reached iconic status after it was featured in the 1968 film Bullitt, starring Steve McQueen. In the film, McQueen drove a modified 1968 Mustang GT 2+2 Fastback. Two vehicles were used in the filming of the movie and only one is still in existence today.";
 
-		value = mHUF2USD(1.741);
+		value = mHUF2USD(4.141);
 		brand_new_prestige_value = 95.90;
 
-		fully_stripped_drag = 0.56;
+		fully_stripped_drag = 0.61;
 		brake_balance_can_be_set = 1;
 
 		exhaustSlotIDList = new Vector();
@@ -34,12 +34,8 @@ public class Ford_Mustang_Fastback_68 extends Ford_Mustang_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //
-
-		float number = random();
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getFordEngine();
+		// stock 1 stuffs //		
+		stock_parts_list_E = EngineModels.getFordEngine();
 
 		stock_parts_list_FL = new int[1];
 		stock_parts_list_FL[ 0] = cars.racers.prime:0x000000DBr; // "FL quarterpanel" //

@@ -228,6 +228,21 @@ public class GameLogic extends GameType implements Runnable
 	final static int FORD_COMO_BLUE				= colorNumber++;
 	final static int FORD_CIGARETTE_CREAM		= colorNumber++;
 	final static int FORD_LYON_BLUE				= colorNumber++;
+	final static int FORD_ROYAL_MAROON			= colorNumber++;
+	final static int FORD_HIGHLAND_GREEN		= colorNumber++;
+	final static int FORD_ACAPULCO_BLUE			= colorNumber++;
+	final static int FORD_CANDYAPPLE_RED		= colorNumber++;
+	final static int FORD_GULFSTREAM_AQUA		= colorNumber++;
+	final static int FORD_TAHOE_TURQUOISE		= colorNumber++;
+	final static int FORD_LIME_GOLD				= colorNumber++;
+	final static int FORD_MEADOWLARK_YELLOW		= colorNumber++;
+	final static int FORD_WIMBLEDON_WHITE		= colorNumber++;
+	final static int FORD_PRESIDENTIAL_BLUE		= colorNumber++;
+	final static int FORD_DIAMOND_BLUE			= colorNumber++;
+	final static int FORD_SUNLIT_GOLD			= colorNumber++;
+	final static int FORD_SEAFOAM_GREEN			= colorNumber++;
+	final static int FORD_PEBBLE_BEIGE			= colorNumber++;
+	final static int FORD_BRITTANY_BLUE			= colorNumber++;
 
 
 	public static int[] CARCOLORS = new int[colorNumber];
@@ -341,10 +356,12 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[RID_CARCOLOR_Einvagen_Ozean]          = cars:0x0000004Er;
 		CARCOLORS[RID_CARCOLOR_Einvagen_Reflex]         = cars:0x0000004Fr;
 		CARCOLORS[RID_CARCOLOR_Einvagen_Saratoga]       = cars:0x00000050r;
+
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Cherry]		= cars:0x00000065r;
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Smaragd]      = cars:0x00000066r;
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Nacht]        = cars:0x00000067r;
 		CARCOLORS[RID_CARCOLOR_Used_Rusty_Zucker]       = cars:0x00000068r;
+
 		CARCOLORS[CHEVROLET_CLASSIC_WHITE]		        = cars:0x00000A2Ar;
 		CARCOLORS[CHEVROLET_CORTEZ_SILVER]		  	 	= cars:0x00000A2Br;
 		CARCOLORS[CHEVROLET_LAGUNA_GRAY]		  	 	= cars:0x00000A2Cr;
@@ -487,6 +504,21 @@ public class GameLogic extends GameType implements Runnable
 		CARCOLORS[FORD_COSTWOLD_GRAY]				= cars:0x00000A86r;
 		CARCOLORS[FORD_COMO_BLUE]					= cars:0x00000A87r;
 		CARCOLORS[FORD_CIGARETTE_CREAM]				= cars:0x00000A88r;
+		CARCOLORS[FORD_ROYAL_MAROON]				= cars:0x00000AAAr;
+		CARCOLORS[FORD_HIGHLAND_GREEN]				= cars:0x00000AABr;
+		CARCOLORS[FORD_ACAPULCO_BLUE]				= cars:0x00000AACr;
+		CARCOLORS[FORD_CANDYAPPLE_RED]				= cars:0x00000AADr;
+		CARCOLORS[FORD_GULFSTREAM_AQUA]				= cars:0x00000AAEr;
+		CARCOLORS[FORD_TAHOE_TURQUOISE]				= cars:0x00000AAFr;
+		CARCOLORS[FORD_LIME_GOLD]					= cars:0x00000AB0r;
+		CARCOLORS[FORD_MEADOWLARK_YELLOW]			= cars:0x00000AB1r;
+		CARCOLORS[FORD_WIMBLEDON_WHITE]				= cars:0x00000AB2r;
+		CARCOLORS[FORD_PRESIDENTIAL_BLUE]			= cars:0x00000AB3r;
+		CARCOLORS[FORD_DIAMOND_BLUE]				= cars:0x00000AB4r;
+		CARCOLORS[FORD_SUNLIT_GOLD]					= cars:0x00000AB5r;
+		CARCOLORS[FORD_SEAFOAM_GREEN]				= cars:0x00000AB6r;
+		CARCOLORS[FORD_PEBBLE_BEIGE]				= cars:0x00000AB7r;
+		CARCOLORS[FORD_BRITTANY_BLUE]				= cars:0x00000AB8r;
 
 
 
