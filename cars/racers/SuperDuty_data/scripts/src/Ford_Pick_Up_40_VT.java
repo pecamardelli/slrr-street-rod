@@ -7,6 +7,7 @@ public class Ford_Pick_Up_40_VT extends VehicleType
 	public Ford_Pick_Up_40_VT( int id )
 	{
 		VehicleModel vmd;
+		float totalProduction = 40.65;
 
 	// DEMO mode //
 		// Ford Pick Up 1/2 ton '40 //
@@ -36,19 +37,19 @@ public class Ford_Pick_Up_40_VT extends VehicleType
 		// Ford Pick Up 1/2 ton '40 //
 			vmd=new VehicleModel( cars.racers.SuperDuty:0x00000006r, VS_USED );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1800.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 0.5;	vmd.maxPower	= 1.0;
-			vmd.minOptical	= 0.4;	vmd.maxOptical	= 1.0;
-			vmd.minTear	= 0.65;	vmd.maxTear	= 1.0;
-			vmd.minWear	= 0.65;	vmd.maxWear	= 1.0;
+			vmd.minOptical	= 0.64;	vmd.maxOptical	= 1.0;
+			vmd.minTear	= 0.35;	vmd.maxTear	= 1.0;
+			vmd.minWear	= 0.35;	vmd.maxWear	= 1.0;
 			vmd.stockPrestige=500;	vmd.fullPrestige= 691;
 			vmd.stockQM = qm_stock_Hauler_s_SuperDuty_500;	vmd.fullQM = qm_full_Hauler_s_SuperDuty_500;
 			vmd.vehicleName = "Ford Pick Up 1/2 ton '40";
 			prevalence += vmd.prevalence;
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
-			vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Cherry);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Smaragd);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Nacht);
+			// vmd.addColorIndex(GameLogic.RID_CARCOLOR_Used_Rusty_Zucker);
 
 	// CAREER mode -> new car dealer //
 		// Ford Pick Up 1/2 ton '40 //
@@ -68,7 +69,7 @@ public class Ford_Pick_Up_40_VT extends VehicleType
 		// Ford Pick Up 1/2 ton '40 //
 			vmd=new VehicleModel( cars.racers.SuperDuty:0x00000006r, VS_DRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1600.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.0;	vmd.maxPower	= 1.5;
 			vmd.minOptical	= 1.0;	vmd.maxOptical	= 1.5;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.0;
@@ -80,7 +81,7 @@ public class Ford_Pick_Up_40_VT extends VehicleType
 
 			vmd=new VehicleModel( cars.racers.SuperDuty:0x00000006r, VS_NRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1700.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.5;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.5;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.5;
@@ -91,7 +92,7 @@ public class Ford_Pick_Up_40_VT extends VehicleType
 			
 			vmd=new VehicleModel( cars.racers.SuperDuty:0x00000006r, VS_RRACE );
 			vtdarr.addElement( vmd );
-			vmd.prevalence = 1500.0;
+			vmd.prevalence = totalProduction;
 			vmd.minPower	= 1.5;	vmd.maxPower	= 2.0;
 			vmd.minOptical	= 1.5;	vmd.maxOptical	= 2.0;
 			vmd.minTear	= 1.0;	vmd.maxTear	= 1.5;
@@ -101,22 +102,14 @@ public class Ford_Pick_Up_40_VT extends VehicleType
 			vmd.vehicleName = "Ford Pick Up 1/2 ton '40";
 
 		// make color indexes //
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Zucker);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Tornado_rot);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Nacht);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Smaragd);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Black_mage);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Hamvas_Grun);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Indigo);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Jazz);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Antracit);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Mercator_Blau);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Murano);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Champagner);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Ozean);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Reflex);
-		addColorIndex(GameLogic.RID_CARCOLOR_Einvagen_Saratoga);
+		addColorIndex(GameLogic.FORD_ACADIA_GREEN);
+		addColorIndex(GameLogic.FORD_CLOUD_MIST_GRAY);
+		addColorIndex(GameLogic.FORD_FOLKESTONE_GRAY);
+		addColorIndex(GameLogic.FORD_LYON_BLUE);
+		addColorIndex(GameLogic.FORD_MANDARIN_MAROON);
+		addColorIndex(GameLogic.FORD_SAHARA_TAN);
+		addColorIndex(GameLogic.FORD_YOSEMITE_GREEN);
 
-//		prevalence *= 1000.0;
+		//prevalence *= 1000.0;
 	}
 }

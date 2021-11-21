@@ -20,7 +20,7 @@ public class Ford_Pick_Up_40 extends Ford_Pick_Up_40_models
 
 		description = "A high flat-topped hood dominated the front look of the 1940 model, as the grille spread out to reach the fenders to differentiate the Deluxe line and the headlights were pushed wider still. The standard Ford inherited the grille of the 1939 model with blackout on each side of a heavy chrome center; heavier headlight surrounds serve as another major differentiator from the 1939. 1940 was the last year of the 1937 design and its smaller V8 engine, with a straight-six engine to be reintroduced the following year. Sealed-beam headlights were one of the few major advances for 1940, while a hydraulic top was new on the convertible.";
 
-		value = tHUF2USD(645.988);
+		value = mHUF2USD(0.688);
 		brand_new_prestige_value = 33.40;
  
 		fully_stripped_drag = 0.54;
@@ -31,11 +31,8 @@ public class Ford_Pick_Up_40 extends Ford_Pick_Up_40_models
 	}
 
 	public void addStockParts( Descriptor desc )
-	{
-		float number = random();
-		EngineModels engine;
-		engine = new EngineModels();		
-		stock_parts_list_E = engine.getFordEngine();
+	{	
+		stock_parts_list_E = EngineModels.getFordEngine();
 
 		stock_parts_list_FL = new int[3];
 		stock_parts_list_FL[ 0] = cars.racers.superduty:0x000000B6r; // "L headlights" //
@@ -110,12 +107,12 @@ public class Ford_Pick_Up_40 extends Ford_Pick_Up_40_models
 //		stock_parts_list_RGear_sways[ 1] = parts:0x00000190r; // "swaybar_SuperDuty_500_rear" //
 
 		stock_parts_list_RGear_wheels = new int[4];
-		stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.FOR_Coupe_40:0x00001028r; // "DevilSport_5_8.0x17_ET_0" //
-		stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.FOR_Coupe_40:0x00001028r; // "DevilSport_5_8.0x17_ET_0" //
+		stock_parts_list_RGear_wheels[ 0] = stock_parts_list_RGear_wheels[ 1] = cars.racers.superduty:0x000010B0r; // "DevilSport_5_8.0x17_ET_0" //
+		stock_parts_list_RGear_wheels[ 2] = stock_parts_list_RGear_wheels[ 3] = cars.racers.superduty:0x000010B0r; // "DevilSport_5_8.0x17_ET_0" //
 
 		stock_parts_list_RGear_tyres = new int[4];
-		stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.FOR_Coupe_40:0x00001029r; // "205_55_17_sport" //
-		stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.FOR_Coupe_40:0x00001029r; // "205_55_17_sport" //
+		stock_parts_list_RGear_tyres[ 0] = stock_parts_list_RGear_tyres[ 1] = cars.racers.superduty:0x000010C7r; // "205_55_17_sport" //
+		stock_parts_list_RGear_tyres[ 2] = stock_parts_list_RGear_tyres[ 3] = cars.racers.superduty:0x000010C7r; // "205_55_17_sport" //
 
 		super.addStockParts( desc );
 
