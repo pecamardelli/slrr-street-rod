@@ -9,6 +9,14 @@ public class EngineModels extends Part
 	final static int engineCode			= 0;
 	final static int GM_V8_283			= engineCode++;
 	final static int GM_V8_302			= engineCode++;
+	final static int GM_V8_327			= engineCode++;
+	final static int GM_V8_327_VETTE_63 = engineCode++;
+	final static int GM_V8_350			= engineCode++;
+	final static int GM_V8_389			= engineCode++;
+	final static int GM_V8_396			= engineCode++;
+	final static int GM_V8_427			= engineCode++;
+	final static int GM_V8_454			= engineCode++;
+	final static int GM_V8_500			= engineCode++;
 	
 	final static int CHRYSLER_V8_318	= engineCode++;
 	final static int CHRYSLER_V8_340	= engineCode++;
@@ -32,10 +40,6 @@ public class EngineModels extends Part
 	final static int FORD_V8_460		= engineCode++;
 
 	private static float number;
-	private static float number2;
-	private static float number3;
-	private static float number4;
-	private static int motor;
 	
 	public static int[] getGmEngine( int code ){
 		int[] engine_part_list;
@@ -84,8 +88,8 @@ public class EngineModels extends Part
 			engine_part_list  = new int[32];
 			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
 			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000003Fr; // "GM 283-307 small block" //
-			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000003Er; // "GM 283 cui small block crankshaft" //
-			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000055r; // "V8 Small Block Rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A03Er; // "GM 302 crankshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A055r; // "V8 302 Rods" //
 			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000E23Er; // "GM Small Block Crank Gear" //
 			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000003r; // "V8 Camshaft" //
 			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000E103r; // "GM Small block stock camshaft timing gear" //
@@ -115,7 +119,300 @@ public class EngineModels extends Part
 			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000049r; // "Alternator Belt" //
 			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B103r; // "Radiator" //
 		}
-		else {
+		else if (code == GM_V8_327)
+		{
+			position = 0;
+			engine_part_list  = new int[31];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A03Fr; // "GM 327 Block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B03Er; // "GM 327 Crank" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA01r; // "GM_small_block_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A003r; // "GM small block camshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA02r; // "GM_small_block_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001055r; // "GM 327 connecting rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001056r; // "GM 327 pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0ADr; // "GM_small_block_L_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0AFr; // "GM_small_block_R_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0BDr; // "GM_small_block_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C1BDr; // "GM Small block left cylinder head cover cup" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1BDr; // "GM_small_block_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0B0r; // "GM_small_block_L_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0B2r; // "GM_small_block_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A043r; // "GM small block chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001303r; // "GM_small_block_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000F113r; // "GM_small_block_stock_harmonic_damper_327-350" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021B7r; // "GM_small_block_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021BBr; // "GM_small_block_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A1r; // "V8 Small Block 2brl Intake Manifold (327-396)" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A3r; // "Stock 2brl Carb" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000086r; // "GM stock air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000C7r; // "Stock Ignition Distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000004Ar; // "Stock Oil Filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000083r; // "V8 Small Block Flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000084r; // "V8 Small Block Clutch" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001048r; // "GM Small block oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002047r; // "GM_small_block_alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002049r; // "GM_small_block_alternator_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B103r; // "Radiator" //
+		}
+		else if (code == GM_V8_327_VETTE_63)
+		{
+			position = 0;
+			engine_part_list  = new int[30];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000993Fr; // "Vette 63 Block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000993Er; // "Vette 63 crank" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009901r; // "Vette 63 crank gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099E3r; // "Vette 63 camshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009902r; // "Vette 63 cam gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009955r; // "Vette 63 connecting rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009956r; // "Vette_63_pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099ADr; // "Vette_63_L_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099AFr; // "Vette_63_R_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099BDr; // "Vette_63_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099BCr; // "Vette_63_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009946r; // "Vette_63_L_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009945r; // "Vette_63_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009943r; // "Vette 63 chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009903r; // "Vette chain cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099F1r; // "Vette dumper" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000022B7r; // "Summit_sb_pump 327, 350" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000099F9r; // "vette stock fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B1BEr; // "Holley_sb_fi_manifold 327 350" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B3A3r; // "Holley_fuel_rail_2" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000098BBr; // "Vette 63 Oil Filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000083r; // "V8 Small Block Flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000084r; // "V8 Small Block Clutch" //
+			//engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001B99r; // "RG 5spd tranny" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009948r; // "Vette oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009947r; // "Vette 63 Alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00009949r; // "Vette 63 Alternator Drive Belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000C7r; // "Stock ignition distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000339Ar; // "Vette_C3_radiator" //
+			// engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000009Ar; // "GM_427_radiator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C5BDr; // "PROFORM GM breather" //
+		}
+		else if (code == GM_V8_350)
+		{
+			position = 0;
+			engine_part_list  = new int[31];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A03Fr; // "GM 327-396 Small Block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B13Er; // "GM 350 small block crankshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA01r; // "GM_small_block_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A003r; // "GM small block camshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA02r; // "GM_small_block_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002055r; // "GM 350 connecting rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001056r; // "GM 327 pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1ADr; // "GM_small_block_L_head II" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1AFr; // "GM_small_block_R_head_II" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0BDr; // "GM_small_block_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C1BDr; // "GM Small block left cylinder head cover cup" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1BDr; // "GM_small_block_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0B0r; // "GM_small_block_L_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0B2r; // "GM_small_block_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A043r; // "GM small block chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001303r; // "GM_small_block_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000F113r; // "GM_small_block_stock_harmonic_damper_327-350" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021B7r; // "GM_small_block_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021BBr; // "GM_small_block_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000104Br; // "GM Small block stock 4brl intake manifold (327-396)" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000086r; // "GM stock air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0A3r; // "stock 4brl carb" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000C7r; // "Stock Ignition Distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000004Ar; // "Stock Oil Filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000083r; // "V8 Small Block Flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000084r; // "V8 Small Block Clutch" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001048r; // "GM Small block oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002047r; // "GM_small_block_alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002049r; // "GM_small_block_alternator_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B103r; // "Radiator" //
+		}
+		else if (code == GM_V8_389)
+		{
+			position = 0;
+			engine_part_list  = new int[33];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A13Fr; // "GTO65_block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000D13Er; // "GTO65_crank" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003355r; // "GTO65_rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001056r; // "GM 327 pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B04Ar; // "MOROSO oil filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010A1r; // "GTO65_intake" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000108Br; // "Holley 3x2brl carbs" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000020A5r; // "Summit 2x4 3x2 air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA01r; // "GM_small_block_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A003r; // "GM small block camshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA02r; // "GM_small_block_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A043r; // "GM small block chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000ADADr; // "GTO65_L_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000F0B0r; // "GTO65_L_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AABDr; // "GTO65_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A148r; // "GTO65_oil_pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000ADAFr; // "GTO65_R_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000ABBDr; // "GTO65_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000F0B2r; // "GTO65_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000133Er; // "GTO65_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002BB7r; // "GTO65_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021BBr; // "GM_small_block_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002047r; // "GM_small_block_alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001F13r; // "TCI_sb_damper 327-350" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002049r; // "GM_small_block_alternator_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000C7r; // "stock ignition distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B103r; // "radiator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000083r; // "flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000084r; // "clutch" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000099r; // "GM 4spd tranny" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C5BDr; // "PROFORM GM breather" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C5BDr; // "PROFORM GM breather" //
+		}
+		else if (code == GM_V8_396)
+		{
+			position = 0;
+			engine_part_list  = new int[31];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A03Fr; // "GM 327-396 Small Block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C13Er; // "GM 396 small block crankshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA01r; // "GM_small_block_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A003r; // "GM small block camshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000AA02r; // "GM_small_block_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003055r; // "GM 396 connecting rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001056r; // "GM 327-396 pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1ADr; // "GM_small_block_L_head II" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1AFr; // "GM_small_block_R_head_II" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0BDr; // "GM_small_block_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000C1BDr; // "GM Small block left cylinder head cover cup" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A1BDr; // "GM_small_block_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0B0r; // "GM_small_block_L_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0B2r; // "GM_small_block_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A043r; // "GM small block chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001303r; // "GM_small_block_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000F113r; // "GM_small_block_stock_harmonic_damper_327-350" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021B7r; // "GM_small_block_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000021BBr; // "GM_small_block_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000104Br; // "GM Small block stock 4brl intake manifold (327-396)" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0A3r; // "stock 4brl carb" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000086r; // "GM stock air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000C7r; // "Stock Ignition Distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000004Ar; // "Stock Oil Filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000083r; // "V8 Small Block Flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000084r; // "V8 Small Block Clutch" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00001048r; // "GM Small block oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002047r; // "GM_small_block_alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00002049r; // "GM_small_block_alternator_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000B103r; // "Radiator" //
+		}
+		else if (code == GM_V8_427)
+		{
+			position = 0;
+			engine_part_list  = new int[31];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000000Ar; // "GM 427 Block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000000Br; // "GM_427_crankshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B3r; // "GM_427_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B4r; // "GM_427_cam //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B5r; // "GM_427_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A8r; // "GM_427_rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000AAr; // "GM_427_pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000004Fr; // "GM_427_L_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000052r; // "GM_427_R_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003042r; // "GM_427_L_head_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000004Er; // "GM_427_L_head_cover_cup" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003044r; // "GM_427_R_head_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003046r; // "GM 427 L header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003045r; // "GM_427_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B7r; // "GM_427_chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000BAr; // "GM_427_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000BBr; // "GM_427_damper" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010B7r; // "GM_427_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010BBr; // "GM_427_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000030A1r; // "GM_427_4brl_intake" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0A3r; // "stock 4brl carb" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000086r; // "GM stock air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000104Dr; // "Mallory_427_Distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000020BBr; // "GM_427_oil_filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A6r; // "GM_427_flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A7r; // "GM_427_clutch" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003048r; // "GM 427 oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003047r; // "GM 427 alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000097r; // "GM_427_alternator_drive_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000009Ar; // "GM_427_radiator" //
+		}
+		else if (code == GM_V8_454)
+		{
+			position = 0;
+			engine_part_list  = new int[31];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000200Ar; // "Motown 454 Cast Iron Block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000100Br; // "Eagle_4340_crankshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010A8r; // "Eagle_4340_rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010AAr; // "Keith_Black_427_pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000020BBr; // "GM_427_oil_filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000030A1r; // "GM_427_4brl_intake" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0A3r; // "Stock 4brl carb" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000001A5r; // "MOROSO air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B3r; // "GM_427_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B4r; // "GM_427_cam //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B5r; // "GM_427_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000B7r; // "GM_427_chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000304Fr; // "DART_L_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003046r; // "GM 427 L header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003B42r; // "Edelbrock_427_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003048r; // "GM 427 oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003052r; // "DART_R_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003045r; // "GM_427_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003B44r; // "Edelbrock_427_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000BAr; // "GM_427_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010B7r; // "GM_427_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000010BBr; // "GM_427_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00003047r; // "GM 427 alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000BBr; // "GM_427_damper" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00000097r; // "GM_427_alternator_drive_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000104Dr; // "Mallory_427_Distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000009Ar; // "GM_427_radiator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A6r; // "GM_427_flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000000A7r; // "GM_427_clutch" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000104Er; // "Hardcore_Breather" //
+		}
+		else if (code == GM_V8_500)
+		{
+			position = 0;
+			engine_part_list  = new int[31];
+			engine_part_list[ position++] = parts:0x000053FFr; // "stock battery" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000800Ar; // "GM_500_block" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000800Br; // "GM_500_crankshaft" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080A8r; // "GM_500_rods" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080AAr; // "GM_500_pistons" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000020BBr; // "GM_427_oil_filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080A1r; // "GM_500_4brl_intake" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000A0A3r; // "Stock 4brl carb" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000001A5r; // "MOROSO air filter" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080B3r; // "GM_500_crank_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080B4r; // "GM_500_cam //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080B5r; // "GM_500_cam_gear" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080B7r; // "GM_500_chain" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000804Fr; // "GM_500_L_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008A46r; // "GM 500 L header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008042r; // "GM_500_L_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008048r; // "GM 500 oil pan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008052r; // "GM_500_R_head" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008045r; // "GM_500_R_header" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008044r; // "GM_500_R_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080BAr; // "GM_500_timing_cover" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000081B7r; // "GM_500_pump" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000081BBr; // "GM_500_fan" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008047r; // "GM 500 alternator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080BBr; // "GM_500_damper" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008097r; // "GM_500_alternator_drive_belt" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000804Dr; // "GM_500_Distributor" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000E123r; // "BE Cool radiator" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080A6r; // "GM_500_flywheel" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x000080A7r; // "GM_500_clutch" //
+			//engine_part_list[ position++] = parts.engines.GM_V8_pak:0x00008098r; // "GM 500 4spd tranny" //
+			engine_part_list[ position++] = parts.engines.GM_V8_pak:0x0000104Er; // "Hardcore_Breather" //
+		}
+		else
+		{
 			Logger.log("Error getting GM engine: unknown engine code (" + code + ")");
 		}
 
@@ -217,13 +514,13 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E15r; // "Radiator_small" //
 			
-			number2 = random();
+			number = random();
 		
-			if ( number2 < 0.5 )
+			if ( number < 0.5 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000099r; // "Transmission_A230_3spd" //
 			}
-			else if ( number2 < 0.9 )
+			else if ( number < 0.9 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000104r; // "Transmission_A727_3spd" //
 			}
@@ -267,13 +564,13 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E15r; // "Radiator_small" //
 			
-			number2 = random();
+			number = random();
 		
-			if ( number2 < 0.5 )
+			if ( number < 0.5 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000099r; // "Transmission_A230_3spd" //
 			}
-			else if ( number2 < 0.9 )
+			else if ( number < 0.9 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000104r; // "Transmission_A727_3spd" //
 			}
@@ -317,21 +614,21 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E15r; // "Radiator_small" //
 			
-			number2 = random();
+			number = random();
 			
-			if ( number2 < 0.3 )
+			if ( number < 0.3 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000099r; // "Transmission_A230_3spd" //
 			}
-			else if ( number2 < 0.6 )
+			else if ( number < 0.6 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000104r; // "Transmission_A727_3spd" //
 			}
-			else if ( number2 < 0.8 )
+			else if ( number < 0.8 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000107r; // "Transmission_A727_4spd" //
 			}
-			else if ( number2 < 0.95 )
+			else if ( number < 0.95 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F89r; // "Transmission_A833_4spd" //
 			}
@@ -375,13 +672,13 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E16r; // "Radiator_big" //
 			
-			number2 = random();
+			number = random();
 			
-			if ( number2 < 0.3 )
+			if ( number < 0.3 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000107r; // "Transmission_A727_4spd" //
 			}
-			else if ( number2 < 0.65 )
+			else if ( number < 0.65 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F89r; // "Transmission_A833_4spd" //
 			}
@@ -425,13 +722,13 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E16r; // "Radiator_big" //
 						
-			number2 = random();
+			number = random();
 			
-			if ( number2 < 0.3 )
+			if ( number < 0.3 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000107r; // "Transmission_A727_4spd" //
 			}
-			else if ( number2 < 0.65 )
+			else if ( number < 0.65 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F89r; // "Transmission_A833_4spd" //
 			}
@@ -475,21 +772,21 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E16r; // "Radiator_big" //
 			
-			number2 = random();
+			number = random();
 			
-			if ( number2 < 0.3 )
+			if ( number < 0.3 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000099r; // "Transmission_A230_3spd" //
 			}
-			else if ( number2 < 0.6 )
+			else if ( number < 0.6 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000104r; // "Transmission_A727_3spd" //
 			}
-			else if ( number2 < 0.8 )
+			else if ( number < 0.8 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000107r; // "Transmission_A727_4spd" //
 			}
-			else if ( number2 < 0.95 )
+			else if ( number < 0.95 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F89r; // "Transmission_A833_4spd" //
 			}
@@ -533,13 +830,13 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E16r; // "Radiator_big" //
 			
-			number2 = random();
+			number = random();
 			
-			if ( number2 < 0.3 )
+			if ( number < 0.3 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000107r; // "Transmission_A727_4spd" //
 			}
-			else if ( number2 < 0.65 )
+			else if ( number < 0.65 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F89r; // "Transmission_A833_4spd" //
 			}
@@ -583,17 +880,17 @@ public class EngineModels extends Part
 			engine_part_list[ 31] = parts.engines.Chrysler_V8_pak:0x0000044Dr; // "Belt_Steering_pump" //
 			engine_part_list[ 32] = parts.engines.Chrysler_V8_pak:0x00000E19r; // "Radiator_HEMI" //
 			
-			number2 = random();
+			number = random();
 			
-			if ( number2 < 0.3 )
+			if ( number < 0.3 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000107r; // "Transmission_A727_4spd" //
 			}
-			else if ( number2 < 0.65 )
+			else if ( number < 0.65 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F89r; // "Transmission_A833_4spd" //
 			}
-			else if ( number2 < 0.85 )
+			else if ( number < 0.85 )
 			{
 				engine_part_list[ 33] = parts.engines.Chrysler_V8_pak:0x00000F90r; // "Transmission_TKO500_5spd" //
 			}

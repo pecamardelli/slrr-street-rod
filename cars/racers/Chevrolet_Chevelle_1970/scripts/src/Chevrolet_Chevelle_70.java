@@ -33,7 +33,7 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 	public void addStockParts( Descriptor desc )
 	{
 		// stock 1 stuffs //	
-		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_302 );
 
 		stock_parts_list_FL = new int[3];
 		stock_parts_list_FL[ 0] = cars.racers.Chevrolet_Chevelle_1970:0x000000A8r; // "L headlights" //
