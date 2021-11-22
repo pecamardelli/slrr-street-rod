@@ -33,7 +33,7 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 	public void addStockParts( Descriptor desc )
 	{
 		// stock 1 stuffs //	
-		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_302 );
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_396 );
 
 		stock_parts_list_FL = new int[3];
 		stock_parts_list_FL[ 0] = cars.racers.Chevrolet_Chevelle_1970:0x000000A8r; // "L headlights" //
@@ -82,11 +82,9 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 
 		stock_parts_list_R  = new int[2];
 		stock_parts_list_R[ 0] = cars.racers.Chevrolet_Chevelle_1970:0x000000C2r; // "FR door" //
-		//stock_parts_list_R[ 1] = cars.racers.Chevrolet_Chevelle_1970:0x000000BFr; // "FR seat" //
+		stock_parts_list_R[ 1] = cars.racers.Chevrolet_Chevelle_1970:0x000000BFr; // "FR seat" //
 
 	// running gear parts lists //
-
-		// stock 1 stuffs //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x000001FCr; // "MC_GT_FL_McPherson_strut" //
