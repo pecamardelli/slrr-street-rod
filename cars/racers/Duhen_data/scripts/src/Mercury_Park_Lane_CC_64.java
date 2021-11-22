@@ -32,7 +32,7 @@ public class Mercury_Park_Lane_CC_64 extends Mercury_Park_Lane_64_models
 
 	public void addStockParts( Descriptor desc )
 	{		
-		stock_parts_list_E = EngineModels.getFordEngine();
+		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
 
 		//stock_parts_list_T  = new int[1];
 		//stock_parts_list_T[ 0] = cars.racers.Duhen:0x000000C3r; // "targa top" //

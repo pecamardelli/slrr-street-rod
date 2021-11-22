@@ -35,7 +35,7 @@ public class Chevrolet_Monte_Carlo_70 extends Chevrolet_Monte_Carlo_70_models
 		// stock 1 stuffs //
 
 		float number = random();		
-		stock_parts_list_E = EngineModels.getGmEngine();
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.baiern:0x00000111r; // "L headlights" //

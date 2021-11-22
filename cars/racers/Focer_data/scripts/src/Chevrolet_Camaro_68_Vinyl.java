@@ -36,7 +36,7 @@ public class Chevrolet_Camaro_68_Vinyl extends Chevrolet_Camaro_68_models
 
 		float number = random();
 		float number2;		
-		stock_parts_list_E = EngineModels.getGmEngine();
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.focer:0x000000A3r; // "L headlights" //

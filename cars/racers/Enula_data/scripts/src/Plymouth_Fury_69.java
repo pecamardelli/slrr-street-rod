@@ -33,7 +33,7 @@ public class Plymouth_Fury_69 extends Plymouth_Fury_69_models
 	{
 		float number = random();
 		float number2;		
-		stock_parts_list_E = EngineModels.getChryslerEngine();
+		stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_318 );
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.enula:0x0000011Dr; // "L headlights" //

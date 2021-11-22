@@ -32,7 +32,7 @@ public class Ford_Deluxe_40 extends Ford_Deluxe_40_models
 	public void addStockParts( Descriptor desc )
 	{
 		// stock 1 stuffs //		
-		stock_parts_list_E = EngineModels.getFordEngine();
+		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.Ford_Deluxe_1940:0x00000111r; // "L headlights" //

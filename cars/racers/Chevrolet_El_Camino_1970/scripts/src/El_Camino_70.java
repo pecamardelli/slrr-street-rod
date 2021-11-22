@@ -33,7 +33,7 @@ public class El_Camino_70 extends El_Camino_models
 	public void addStockParts( Descriptor desc )
 	{
 		// stock 1 stuffs //		
-		stock_parts_list_E = EngineModels.getGmEngine();
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.Chevrolet_El_Camino_1970:0x000000A8r; // "L headlights" //

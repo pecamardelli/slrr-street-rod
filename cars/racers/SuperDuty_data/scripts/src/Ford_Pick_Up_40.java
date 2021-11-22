@@ -32,7 +32,7 @@ public class Ford_Pick_Up_40 extends Ford_Pick_Up_40_models
 
 	public void addStockParts( Descriptor desc )
 	{	
-		stock_parts_list_E = EngineModels.getFordEngine();
+		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
 
 		stock_parts_list_FL = new int[3];
 		stock_parts_list_FL[ 0] = cars.racers.superduty:0x000000B6r; // "L headlights" //

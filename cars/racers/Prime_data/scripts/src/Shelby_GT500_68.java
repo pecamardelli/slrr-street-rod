@@ -35,7 +35,7 @@ public class Shelby_GT500_68 extends Ford_Mustang_models
 	public void addStockParts( Descriptor desc )
 	{
 		// stock 1 stuffs //		
-		stock_parts_list_E = EngineModels.getFordEngine();
+		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
 
 		stock_parts_list_FL = new int[1];
 		stock_parts_list_FL[ 0] = cars.racers.prime:0x000000DBr; // "FL quarterpanel" //

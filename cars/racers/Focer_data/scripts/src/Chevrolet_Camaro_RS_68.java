@@ -37,7 +37,7 @@ public class Chevrolet_Camaro_RS_68 extends Chevrolet_Camaro_68_models
 
 		float number = random();
 		float number2;		
-		stock_parts_list_E = EngineModels.getGmEngine();		
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );		
 
 		stock_parts_list_T  = new int[1];
 		stock_parts_list_T[ 0] = cars.racers.focer:0x000000C1r; // "Rf airduct" //

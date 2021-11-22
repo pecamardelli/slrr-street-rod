@@ -31,7 +31,7 @@ public class Dodge_330_63 extends Dodge_330_63_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		stock_parts_list_E = EngineModels.getChryslerEngine();
+		stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_318 );
 
 		stock_parts_list_FL = new int[4];
 		stock_parts_list_FL[ 0] = cars.racers.einvagen:0x000000BAr; // "L headlights" //

@@ -38,7 +38,7 @@ public class Chevrolet_Impala_SS_67 extends Chevrolet_Impala_SS_67_models
 
 		float number = random();
 		float number2;		
-		stock_parts_list_E = EngineModels.getGmEngine();
+		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.nonus:0x000000A1r; // "L headlights" //
