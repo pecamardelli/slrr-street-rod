@@ -32,8 +32,33 @@ public class Chevrolet_Chevelle_70 extends Chevelle_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //	
-		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_396 );
+		// stock 1 stuff //
+		float number = random();
+
+		if (number < 0.14 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_307 );
+		}
+		else if (number < 0.3 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_327 );
+		}
+		else if (number < 0.45 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_350 );
+		}
+		else if (number < 0.65 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_396 );
+		}
+		else if (number < 0.85 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_427 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_454 );
+		}
 
 		stock_parts_list_FL = new int[3];
 		stock_parts_list_FL[ 0] = cars.racers.Chevrolet_Chevelle_1970:0x000000A8r; // "L headlights" //

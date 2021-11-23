@@ -24,8 +24,8 @@ public class EngineModels extends Part
 	final static int CHRYSLER_V8_361	= engineCode++;
 	final static int CHRYSLER_V8_383	= engineCode++;
 	final static int CHRYSLER_V8_400	= engineCode++;
-	final static int CHRYSLER_V8_440	= engineCode++;
 	final static int CHRYSLER_V8_426	= engineCode++;
+	final static int CHRYSLER_V8_440	= engineCode++;
 
 	final static int FORD_L6_188		= engineCode++;
 	final static int FORD_L6_221		= engineCode++;
@@ -918,6 +918,10 @@ public class EngineModels extends Part
 	public static int[] getChryslerEngine( int code )
 	{
 		int[] engine_part_list  = new int[34];
+		float number1;
+		float number2;
+		float number3;
+		
 		engine_part_list[ 0] = parts:0x000053FFr; // "stock battery" //
 		
 		if ( code == CHRYSLER_V8_318 )

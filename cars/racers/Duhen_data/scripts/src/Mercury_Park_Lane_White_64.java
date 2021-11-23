@@ -31,7 +31,16 @@ public class Mercury_Park_Lane_White_64 extends Mercury_Park_Lane_64_models
 
 	public void addStockParts( Descriptor desc )
 	{		
-		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
+		float number = random();
+		
+		if ( number < 0.4 )
+		{
+			stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_390 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_429 );
+		}
 
 		stock_parts_list_T  = new int[1];
 		stock_parts_list_T[ 0] = cars.racers.Duhen:0x000000C3r; // "targa top" //
@@ -97,7 +106,7 @@ public class Mercury_Park_Lane_White_64 extends Mercury_Park_Lane_64_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x00000209r; // "Prime_FL_McPherson_strut" //

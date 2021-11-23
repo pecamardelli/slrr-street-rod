@@ -95,7 +95,7 @@ public class Ford_Pick_Up_Custom_40 extends Ford_Pick_Up_40_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x000001F8r; // "SuperDuty_750_FL_McPherson_strut" //

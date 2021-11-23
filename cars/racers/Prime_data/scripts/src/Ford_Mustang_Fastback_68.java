@@ -34,8 +34,25 @@ public class Ford_Mustang_Fastback_68 extends Ford_Mustang_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //		
-		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
+		// stock 1 stuff //
+		float number = random();
+
+		if ( number < 0.2 )
+		{
+			stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_292 );
+		}
+		else if ( number < 0.58 )
+		{
+			stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_302 );
+		}
+		else if ( number < 0.8 )
+		{
+			stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_390 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_429 );
+		}
 
 		stock_parts_list_FL = new int[1];
 		stock_parts_list_FL[ 0] = cars.racers.prime:0x000000DBr; // "FL quarterpanel" //
@@ -119,7 +136,7 @@ public class Ford_Mustang_Fastback_68 extends Ford_Mustang_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x00000209r; // "Prime_FL_McPherson_strut" //

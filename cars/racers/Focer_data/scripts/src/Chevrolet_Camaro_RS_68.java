@@ -33,11 +33,35 @@ public class Chevrolet_Camaro_RS_68 extends Chevrolet_Camaro_68_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		float number = random();
-		float number2;		
-		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );		
+		float number2;
+		
+		if ( number < 0.25 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
+		}
+		else if ( number < 0.38 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_307 );
+		}
+		else if ( number < 0.52 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_327 );
+		}
+		else if ( number < 0.72 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_350 );
+		}
+		else if ( number < 0.93 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_396 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_427 );
+		}		
 
 		stock_parts_list_T  = new int[1];
 		stock_parts_list_T[ 0] = cars.racers.focer:0x000000C1r; // "Rf airduct" //
@@ -144,7 +168,7 @@ public class Chevrolet_Camaro_RS_68 extends Chevrolet_Camaro_68_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		//////////////////
 		// SUSPENSSIONS //

@@ -31,7 +31,7 @@ public class Ford_Deluxe_40 extends Ford_Deluxe_40_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //		
+		// stock 1 stuff //		
 		stock_parts_list_E = EngineModels.getFordEngine( EngineModels.FORD_V8_260 );
 
 		stock_parts_list_FL = new int[2];
@@ -78,7 +78,7 @@ public class Ford_Deluxe_40 extends Ford_Deluxe_40_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x000000F8r; // "Baiern_CS_FL_McPherson_strut" //

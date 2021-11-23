@@ -31,7 +31,24 @@ public class Dodge_330_63 extends Dodge_330_63_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_318 );
+		float number = random();
+		
+		if ( number < 0.5 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_318 );
+		}
+		else if ( number < 0.78 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_361 );
+		}
+		else if ( number < 0.95 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_383 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_426 );
+		}
 
 		stock_parts_list_FL = new int[4];
 		stock_parts_list_FL[ 0] = cars.racers.einvagen:0x000000BAr; // "L headlights" //
@@ -87,7 +104,7 @@ public class Dodge_330_63 extends Dodge_330_63_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x000001FCr; // "MC_GT_FL_McPherson_strut" //

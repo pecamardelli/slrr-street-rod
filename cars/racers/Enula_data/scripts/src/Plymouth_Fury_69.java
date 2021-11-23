@@ -32,8 +32,28 @@ public class Plymouth_Fury_69 extends Plymouth_Fury_69_models
 	public void addStockParts( Descriptor desc )
 	{
 		float number = random();
-		float number2;		
-		stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_318 );
+		float number2;
+		
+		if ( number < 0.25 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_318 );
+		}
+		else if ( number < 0.38 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_360 );
+		}
+		else if ( number < 0.62 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_383 );
+		}
+		else if ( number < 0.81 )
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_400 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getChryslerEngine( EngineModels.CHRYSLER_V8_440 );
+		}
 		
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.enula:0x0000011Dr; // "L headlights" //
@@ -86,7 +106,7 @@ public class Plymouth_Fury_69 extends Plymouth_Fury_69_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x00004009r; // "WRY_FL_McPherson" //

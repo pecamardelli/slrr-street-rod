@@ -32,8 +32,29 @@ public class El_Camino_70 extends El_Camino_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //		
-		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
+		// stock 1 stuff //
+		float number = random();
+
+		if (number < 0.34 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_307 );
+		}
+		else if (number < 0.70 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_350 );
+		}
+		else if (number < 0.85 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_396 );
+		}
+		else if (number < 0.90 )
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_427 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_454 );
+		}
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.Chevrolet_El_Camino_1970:0x000000A8r; // "L headlights" //
@@ -74,7 +95,7 @@ public class El_Camino_70 extends El_Camino_models
 
 	// running gear parts lists //
 
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
         stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x000001FCr; // "MC_GT_FL_McPherson_strut" //

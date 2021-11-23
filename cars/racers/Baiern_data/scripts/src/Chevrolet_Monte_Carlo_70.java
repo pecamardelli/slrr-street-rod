@@ -32,10 +32,21 @@ public class Chevrolet_Monte_Carlo_70 extends Chevrolet_Monte_Carlo_70_models
 
 	public void addStockParts( Descriptor desc )
 	{
-		// stock 1 stuffs //
+		// stock 1 stuff //
+		float number = random();
 
-		float number = random();		
-		stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_283 );
+		if(number < 0.33)
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_350 );
+		}
+		else if(number < 0.55)
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_396 );
+		}
+		else
+		{
+			stock_parts_list_E = EngineModels.getGmEngine( EngineModels.GM_V8_454 );
+		}
 
 		stock_parts_list_FL = new int[2];
 		stock_parts_list_FL[ 0] = cars.racers.baiern:0x00000111r; // "L headlights" //
@@ -91,7 +102,7 @@ public class Chevrolet_Monte_Carlo_70 extends Chevrolet_Monte_Carlo_70_models
 		stock_parts_list_R[ 8] = cars.racers.baiern:0x0000111Fr; // "Stock roof carpeting" //
 
 	// running gear parts lists //
-		// stock 1 stuffs //
+		// stock 1 stuff //
 
 		stock_parts_list_RGear_suspensions = new int[4];
 		stock_parts_list_RGear_suspensions[ 0] = parts:0x000000F8r; // "Baiern_CS_FL_McPherson_strut" //
