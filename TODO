@@ -1,0 +1,24 @@
+# ANALYSIS
+
+    - Check car scripts and make sure all parts are in place.
+    - Improve physics.
+
+# FIXES
+
+    - Invalid clickdef (000aaa18) in 0019aa06 (cars\racers\Chevrolet_Chevelle_1970.rpk).
+    - Parts size in catalog (rims).
+
+# REFACTOR
+
+    - getChryslerEngie method.
+    - Backgrounds and visual.
+
+# FEATURES
+
+    - Add rusty colors.
+    - Add more cars.
+
+# ADDONS
+
+    - Ford inline six engine pack.
+    - Christine.
