@@ -7,18 +7,28 @@
 
     - Invalid clickdef (000aaa18) in 0019aa06 (cars\racers\Chevrolet_Chevelle_1970.rpk).
     - Parts size in catalog (rims).
+    - Fix Chevelle 70 interior view.
 
 # REFACTOR
 
     - getChryslerEngie method.
     - Backgrounds and visual.
+    - Rebuild mod's missing javas.
+    - Rename stock cars.
+    - Remove stock parts.
 
 # FEATURES
 
     - Add rusty colors.
     - Add more cars.
+    - Make part's price proportional to car's.
 
 # ADDONS
 
-    - Ford inline six engine pack.
-    - Christine.
+    - Ford inline six engine pack (WIP).
+    - Christine (WIP).
+    - Torino 380.
+
+# TOOLS
+
+    - Node script to sanitize cars.
