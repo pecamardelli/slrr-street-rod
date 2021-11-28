@@ -130,7 +130,7 @@ public class CarMarket extends Scene implements GameState
 			if( used && curcar == 0 )
 			{
 				price *= 1.0+((cars[curcar].getPrestigeMultiplier()-1.0)*PRESTIGE_RATIO_BUY);
-				price *= PRICERATIO_BUY;
+				price *= PRICERATIO_USED;
 				carName.changeText( "YOUR CAR  $" + price );
 			}
 			else

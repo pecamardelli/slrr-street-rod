@@ -5,7 +5,6 @@
 
 # FIXES
 
-    - Fix car selling price being higher than the price that was payed.
     - Invalid clickdef (000aaa18) in 0019aa06 (cars\racers\Chevrolet_Chevelle_1970.rpk).
     - Parts size in catalog (rims).
     - Fix Chevelle 70 interior view.
